@@ -1,0 +1,10 @@
+[0/1] Re-running CMake...
+-- Component directory /home/edev/esp/esp32-opencv/esp32/lib/release_build/opencv/3rdparty does not contain a CMakeLists.txt file. No component will be added
+-- Component directory /home/edev/esp/esp32-opencv/esp32/lib/release_build/opencv/opencv2 does not contain a CMakeLists.txt file. No component will be added
+-- Building ESP-IDF components for target esp32
+Processing 1 dependencies:
+[1/1] idf (5.2.0)
+-- Configuring incomplete, errors occurred!
+See also "/home/edev/Documents/Repositories/Subjects/esp32/camera_test/build/CMakeFiles/CMakeOutput.log".
+FAILED: build.ninja 
+/usr/bin/cmake --regenerate-during-build -S/home/edev/Documents/Repositories/Subjects/esp32/camera_test -B/home/edev/Documents/Repositories/Subjects/esp32/camera_test/build

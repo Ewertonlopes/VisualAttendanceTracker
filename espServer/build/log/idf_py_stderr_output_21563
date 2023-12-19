@@ -1,0 +1,77 @@
+[0;33m--- idf_monitor on /dev/ttyUSB0 115200 ---[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H ---[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400814d0: call_start_cpu1 at /home/edev/esp/esp-idf/components/esp_system/port/cpu_start.c:178
+[0m
+[0;33m0x40081d55: panic_abort at /home/edev/esp/esp-idf/components/esp_system/panic.c:452
+[0m
+[0;33m0x4008d431: esp_system_abort at /home/edev/esp/esp-idf/components/esp_system/port/esp_system_chip.c:93
+[0m
+[0;33m0x400947b9: __assert_func at /home/edev/esp/esp-idf/components/newlib/assert.c:81
+[0m
+[0;33m0x40082615: heap_caps_free at /home/edev/esp/esp-idf/components/heap/heap_caps.c:387 (discriminator 1)
+[0m
+[0;33m0x40094815: free at /home/edev/esp/esp-idf/components/newlib/heap.c:39
+[0m
+[0;33m0x400d7b9a: convolution at /home/edev/Documents/Repositories/Subjects/esp32/camera_test/main/convolve.c:98 (discriminator 3)
+[0m
+[0;33m0x400d7c52: jpg_stream_httpd_handler at /home/edev/Documents/Repositories/Subjects/esp32/camera_test/main/take_picture.c:158
+[0m
+[0;33m0x400d7e53: jpg_stream_httpd_handler at /home/edev/Documents/Repositories/Subjects/esp32/camera_test/main/take_picture.c:136
+[0m
+[0;33m0x400f12f1: httpd_uri at /home/edev/esp/esp-idf/components/esp_http_server/src/httpd_uri.c:329
+[0m
+[0;33m0x400f1b07: httpd_parse_req at /home/edev/esp/esp-idf/components/esp_http_server/src/httpd_parse.c:667
+ (inlined by) httpd_req_new at /home/edev/esp/esp-idf/components/esp_http_server/src/httpd_parse.c:795
+[0m
+[0;33m0x400f09b1: httpd_sess_process at /home/edev/esp/esp-idf/components/esp_http_server/src/httpd_sess.c:426 (discriminator 15)
+[0m
+[0;33m0x400efc7a: httpd_process_session at /home/edev/esp/esp-idf/components/esp_http_server/src/httpd_main.c:255
+ (inlined by) httpd_process_session at /home/edev/esp/esp-idf/components/esp_http_server/src/httpd_main.c:240
+[0m
+[0;33m0x40161b25: httpd_sess_enum at /home/edev/esp/esp-idf/components/esp_http_server/src/httpd_sess.c:50 (discriminator 1)
+[0m
+[0;33m0x400efe7d: httpd_server at /home/edev/esp/esp-idf/components/esp_http_server/src/httpd_main.c:305
+ (inlined by) httpd_thread at /home/edev/esp/esp-idf/components/esp_http_server/src/httpd_main.c:327
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400814d0: call_start_cpu1 at /home/edev/esp/esp-idf/components/esp_system/port/cpu_start.c:178
+[0m
+[0;33m0x40081d55: panic_abort at /home/edev/esp/esp-idf/components/esp_system/panic.c:452
+[0m
+[0;33m0x4008d431: esp_system_abort at /home/edev/esp/esp-idf/components/esp_system/port/esp_system_chip.c:93
+[0m
+[0;33m0x400947b9: __assert_func at /home/edev/esp/esp-idf/components/newlib/assert.c:81
+[0m
+[0;33m0x40082615: heap_caps_free at /home/edev/esp/esp-idf/components/heap/heap_caps.c:387 (discriminator 1)
+[0m
+[0;33m0x40094815: free at /home/edev/esp/esp-idf/components/newlib/heap.c:39
+[0m
+[0;33m0x400d7b9a: convolution at /home/edev/Documents/Repositories/Subjects/esp32/camera_test/main/convolve.c:98 (discriminator 3)
+[0m
+[0;33m0x400d7c52: jpg_stream_httpd_handler at /home/edev/Documents/Repositories/Subjects/esp32/camera_test/main/take_picture.c:158
+[0m
+[0;33m0x400d7e53: jpg_stream_httpd_handler at /home/edev/Documents/Repositories/Subjects/esp32/camera_test/main/take_picture.c:136
+[0m
+[0;33m0x400f12f1: httpd_uri at /home/edev/esp/esp-idf/components/esp_http_server/src/httpd_uri.c:329
+[0m
+[0;33m0x400f1b07: httpd_parse_req at /home/edev/esp/esp-idf/components/esp_http_server/src/httpd_parse.c:667
+ (inlined by) httpd_req_new at /home/edev/esp/esp-idf/components/esp_http_server/src/httpd_parse.c:795
+[0m
+[0;33m0x400f09b1: httpd_sess_process at /home/edev/esp/esp-idf/components/esp_http_server/src/httpd_sess.c:426 (discriminator 15)
+[0m
+[0;33m0x400efc7a: httpd_process_session at /home/edev/esp/esp-idf/components/esp_http_server/src/httpd_main.c:255
+ (inlined by) httpd_process_session at /home/edev/esp/esp-idf/components/esp_http_server/src/httpd_main.c:240
+[0m
+[0;33m0x40161b25: httpd_sess_enum at /home/edev/esp/esp-idf/components/esp_http_server/src/httpd_sess.c:50 (discriminator 1)
+[0m
+[0;33m0x400efe7d: httpd_server at /home/edev/esp/esp-idf/components/esp_http_server/src/httpd_main.c:305
+ (inlined by) httpd_thread at /home/edev/esp/esp-idf/components/esp_http_server/src/httpd_main.c:327
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400814d0: call_start_cpu1 at /home/edev/esp/esp-idf/components/esp_system/port/cpu_start.c:178
+[0m
+[0m

@@ -1,0 +1,23 @@
+[0/1] Re-running CMake...
+-- Building ESP-IDF components for target esp32
+Processing 1 dependencies:
+[1/1] idf (5.2.0)
+-- Project sdkconfig file /home/edev/Documents/Repositories/Subjects/esp32/camera_test/sdkconfig
+Loading defaults file /home/edev/Documents/Repositories/Subjects/esp32/camera_test/sdkconfig.defaults...
+/home/edev/Documents/Repositories/Subjects/esp32/camera_test/sdkconfig.defaults:1 CONFIG_ESP32_DEFAULT_CPU_FREQ_240 was replaced with CONFIG_ESP_DEFAULT_CPU_FREQ_MHZ_240
+/home/edev/Documents/Repositories/Subjects/esp32/camera_test/sdkconfig.defaults:12 CONFIG_SPIRAM_SUPPORT was replaced with CONFIG_SPIRAM
+/home/edev/Documents/Repositories/Subjects/esp32/camera_test/sdkconfig.defaults:13 CONFIG_ESP32_SPIRAM_SUPPORT was replaced with CONFIG_SPIRAM
+-- Compiler supported targets: xtensa-esp32-elf
+-- App "camera_example" version: 7a8d02c-dirty
+-- Adding linker script /home/edev/Documents/Repositories/Subjects/esp32/camera_test/build/esp-idf/esp_system/ld/memory.ld
+-- Adding linker script /home/edev/esp/esp-idf/components/esp_system/ld/esp32/sections.ld.in
+-- Adding linker script /home/edev/esp/esp-idf/components/esp_rom/esp32/ld/esp32.rom.ld
+-- Adding linker script /home/edev/esp/esp-idf/components/esp_rom/esp32/ld/esp32.rom.api.ld
+-- Adding linker script /home/edev/esp/esp-idf/components/esp_rom/esp32/ld/esp32.rom.libgcc.ld
+-- Adding linker script /home/edev/esp/esp-idf/components/esp_rom/esp32/ld/esp32.rom.newlib-data.ld
+-- Adding linker script /home/edev/esp/esp-idf/components/esp_rom/esp32/ld/esp32.rom.syscalls.ld
+-- Adding linker script /home/edev/esp/esp-idf/components/soc/esp32/ld/esp32.peripherals.ld
+-- Configuring incomplete, errors occurred!
+See also "/home/edev/Documents/Repositories/Subjects/esp32/camera_test/build/CMakeFiles/CMakeOutput.log".
+FAILED: build.ninja 
+/usr/bin/cmake --regenerate-during-build -S/home/edev/Documents/Repositories/Subjects/esp32/camera_test -B/home/edev/Documents/Repositories/Subjects/esp32/camera_test/build

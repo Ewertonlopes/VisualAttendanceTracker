@@ -1,0 +1,6 @@
+CMake Error at main/CMakeLists.txt:20 (target_link_libraries):
+  INTERFACE library can only be used with the INTERFACE keyword of
+  target_link_libraries
+
+
+ninja: error: rebuilding 'build.ninja': subcommand failed

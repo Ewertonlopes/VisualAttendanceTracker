@@ -1,0 +1,5 @@
+[0/1] Re-running CMake...
+-- Configuring incomplete, errors occurred!
+See also "/home/edev/Documents/Repositories/Subjects/esp32/camera_test/build/CMakeFiles/CMakeOutput.log".
+FAILED: build.ninja 
+/usr/bin/cmake --regenerate-during-build -S/home/edev/Documents/Repositories/Subjects/esp32/camera_test -B/home/edev/Documents/Repositories/Subjects/esp32/camera_test/build

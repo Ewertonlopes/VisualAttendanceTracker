@@ -1,0 +1,286 @@
+ets Jul 29 2019 12:21:46
+
+rs�ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:1
+load:0x3fff0030,len:7488
+load:0x40078000,len:16772
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:4292
+entry 0x4008066c
+[0;32mI (31) boot: ESP-IDF v5.2-dev-2708-g3640dc86bb 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Oct 29 2023 15:46:33[0m
+[0;32mI (33) boot: Multicore bootloader[0m
+[0;32mI (37) boot: chip revision: v3.1[0m
+[0;32mI (41) qio_mode: Enabling default flash chip QIO[0m
+[0;32mI (46) boot.esp32: SPI Speed      : 80MHz[0m
+[0;32mI (51) boot.esp32: SPI Mode       : QIO[0m
+[0;32mI (55) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (60) boot: Enabling RNG early entropy source...[0m
+[0;32mI (65) boot: Partition Table:[0m
+[0;32mI (69) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (76) boot:  0 nvs              WiFi data        01 02 00011000 00006000[0m
+[0;32mI (84) boot:  1 phy_init         RF data          01 01 00017000 00001000[0m
+[0;32mI (91) boot:  2 factory          factory app      00 00 00020000 00100000[0m
+[0;32mI (99) boot: End of partition table[0m
+[0;32mI (103) esp_image: segment 0: paddr=00020020 vaddr=3f400020 size=28c34h (166964) map[0m
+[0;32mI (157) esp_image: segment 1: paddr=00048c5c vaddr=3ffb0000 size=048ach ( 18604) load[0m
+[0;32mI (163) esp_image: segment 2: paddr=0004d510 vaddr=40080000 size=02b08h ( 11016) load[0m
+[0;32mI (167) esp_image: segment 3: paddr=00050020 vaddr=400d0020 size=996f4h (628468) map[0m
+[0;32mI (344) esp_image: segment 4: paddr=000e971c vaddr=40082b08 size=177e4h ( 96228) load[0m
+[0;32mI (389) boot: Loaded app from partition at offset 0x20000[0m
+[0;32mI (389) boot: Disabling RNG early entropy source...[0m
+[0;32mI (401) cpu_start: Multicore app[0m
+[0;32mI (401) quad_psram: This chip is ESP32-D0WD[0m
+[0;32mI (401) esp_psram: Found 2MB PSRAM device[0m
+[0;32mI (403) esp_psram: Speed: 80MHz[0m
+[0;32mI (407) esp_psram: PSRAM initialized, cache is in low/high (2-core) mode.[0m
+[0;32mI (414) cpu_start: Pro cpu up.[0m
+[0;32mI (418) cpu_start: Starting app cpu, entry point is 0x400814d0[0m
+[0;32mI (0) cpu_start: App cpu up.[0m
+[0;32mI (660) esp_psram: SPI SRAM memory test OK[0m
+[0;32mI (668) cpu_start: Pro cpu start user code[0m
+[0;32mI (668) cpu_start: cpu freq: 240000000 Hz[0m
+[0;32mI (668) cpu_start: Application information:[0m
+[0;32mI (671) cpu_start: Project name:     camera_example[0m
+[0;32mI (677) cpu_start: App version:      d380cac-dirty[0m
+[0;32mI (682) cpu_start: Compile time:     Oct 31 2023 19:37:36[0m
+[0;32mI (688) cpu_start: ELF file SHA256:  acc1cfe4a...[0m
+[0;32mI (694) cpu_start: ESP-IDF:          v5.2-dev-2708-g3640dc86bb[0m
+[0;32mI (700) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (705) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (710) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (714) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (722) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (728) heap_init: At 3FFBA978 len 00025688 (149 KiB): DRAM[0m
+[0;32mI (734) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (740) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (747) heap_init: At 4009A2EC len 00005D14 (23 KiB): IRAM[0m
+[0;32mI (753) esp_psram: Adding pool of 2048K of PSRAM memory to heap allocator[0m
+[0;32mI (761) spi_flash: detected chip: generic[0m
+[0;32mI (765) spi_flash: flash io: qio[0m
+[0;33mW (769) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (780) app_start: Starting scheduler on CPU0[0m
+[0;32mI (785) app_start: Starting scheduler on CPU1[0m
+[0;32mI (785) main_task: Started on CPU0[0m
+[0;32mI (795) esp_psram: Reserving pool of 32K of internal memory for DMA/internal allocations[0m
+[0;32mI (803) main_task: Calling app_main()[0m
+[0;32mI (836) gpio: GPIO[25]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:2 [0m
+[0;32mI (837) cam_hal: cam init ok[0m
+[0;32mI (838) sccb: pin_sda 26 pin_scl 27[0m
+[0;32mI (842) sccb: sccb_i2c_port=1[0m
+[0;32mI (846) gpio: GPIO[32]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (885) camera: Detected camera at address=0x30[0m
+[0;32mI (888) camera: Detected OV2640 camera[0m
+[0;32mI (888) camera: Camera PID=0x26 VER=0x42 MIDL=0x7f MIDH=0xa2[0m
+[0;32mI (968) cam_hal: buffer_size: 32768, half_buffer_size: 4096, node_buffer_size: 2048, node_cnt: 16, total_cnt: 15[0m
+[0;32mI (968) cam_hal: Allocating 61440 Byte frame buffer in PSRAM[0m
+[0;32mI (974) cam_hal: Allocating 61440 Byte frame buffer in PSRAM[0m
+[0;32mI (981) cam_hal: cam config ok[0m
+[0;32mI (984) ov2640: Set PLL: clk_2x: 0, clk_div: 0, pclk_auto: 0, pclk_div: 8[0m
+[0;32mI (1070) example:take_picture: ESP32 IP:192.168.4.1[0m
+I (1071) wifi:wifi driver task: 3ffd371c, prio:23, stack:6656, core=0
+I (1084) wifi:wifi firmware version: e03c1ca
+I (1084) wifi:wifi certification version: v7.0
+I (1084) wifi:config NVS flash: enabled
+I (1085) wifi:config nano formating: disabled
+I (1089) wifi:Init data frame dynamic rx buffer num: 32
+I (1094) wifi:Init management frame dynamic rx buffer num: 32
+I (1099) wifi:Init management short buffer num: 32
+I (1104) wifi:Init static tx buffer num: 16
+I (1108) wifi:Init tx cache buffer num: 32
+I (1112) wifi:Init static rx buffer size: 1600
+I (1116) wifi:Init static rx buffer num: 10
+I (1120) wifi:Init dynamic rx buffer num: 32
+[0;32mI (1124) wifi_init: rx ba win: 6[0m
+[0;32mI (1128) wifi_init: tcpip mbox: 32[0m
+[0;32mI (1132) wifi_init: udp mbox: 6[0m
+[0;32mI (1135) wifi_init: tcp mbox: 6[0m
+[0;32mI (1139) wifi_init: tcp tx win: 5744[0m
+[0;32mI (1144) wifi_init: tcp rx win: 5744[0m
+[0;32mI (1148) wifi_init: tcp mss: 1440[0m
+[0;32mI (1152) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (1156) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (1165) phy_init: phy_version 4771,450c73b,Aug 16 2023,11:03:10[0m
+I (1229) wifi:mode : softAP (fc:b4:67:50:5e:8d)
+I (1230) wifi:Total power save buffer number: 8
+I (1230) wifi:Init max length of beacon: 752/752
+I (1231) wifi:Init max length of beacon: 752/752
+[0;32mI (1236) example:take_picture: wifi_init_softap finished. SSID:VideoStream password:01234567 channel:3[0m
+[0;32mI (1236) esp_netif_lwip: DHCP server started on interface WIFI_AP_DEF with IP: 192.168.4.1[0m
+[0;32mI (1256) main_task: Returned from app_main()[0m
+I (15440) wifi:new:<3,0>, old:<3,1>, ap:<3,1>, sta:<255,255>, prof:3
+I (15441) wifi:station: b2:d4:20:e4:68:ee join, AID=1, bgn, 20
+[0;32mI (15441) example:take_picture: station b2:d4:20:e4:68:ee join, AID=1[0m
+I (15464) wifi:<ba-add>idx:2 (ifx:1, b2:d4:20:e4:68:ee), tid:0, ssn:0, winSize:64
+[0;32mI (15672) esp_netif_lwip: DHCP server assigned IP to a client, IP is: 192.168.4.2[0m
+[0;32mI (16103) example:take_picture: MJPG: 13KB 12ms (83.3fps)[0m
+[0;32mI (16113) example:take_picture: MJPG: 13KB 10ms (100.0fps)[0m
+[0;33mW (16234) httpd_txrx: httpd_sock_err: error in send : 104[0m
+[0;33mW (16235) httpd_uri: httpd_uri: uri handler execution failed[0m
+[0;32mI (30057) example:take_picture: MJPG: 13KB 8ms (125.0fps)[0m
+[0;32mI (30065) example:take_picture: MJPG: 13KB 8ms (125.0fps)[0m
+[0;32mI (30157) example:take_picture: MJPG: 13KB 91ms (11.0fps)[0m
+[0;32mI (30240) example:take_picture: MJPG: 13KB 83ms (12.0fps)[0m
+[0;32mI (30324) example:take_picture: MJPG: 13KB 83ms (12.0fps)[0m
+[0;32mI (30439) example:take_picture: MJPG: 13KB 115ms (8.7fps)[0m
+[0;32mI (30476) example:take_picture: MJPG: 13KB 36ms (27.8fps)[0m
+[0;32mI (30555) example:take_picture: MJPG: 13KB 79ms (12.7fps)[0m
+[0;32mI (30641) example:take_picture: MJPG: 13KB 85ms (11.8fps)[0m
+[0;32mI (30716) example:take_picture: MJPG: 13KB 74ms (13.5fps)[0m
+[0;32mI (30793) example:take_picture: MJPG: 13KB 77ms (13.0fps)[0m
+[0;32mI (30874) example:take_picture: MJPG: 13KB 80ms (12.5fps)[0m
+[0;32mI (30953) example:take_picture: MJPG: 13KB 79ms (12.7fps)[0m
+[0;32mI (31034) example:take_picture: MJPG: 13KB 80ms (12.5fps)[0m
+[0;32mI (31115) example:take_picture: MJPG: 13KB 80ms (12.5fps)[0m
+[0;32mI (31193) example:take_picture: MJPG: 13KB 78ms (12.8fps)[0m
+[0;32mI (31274) example:take_picture: MJPG: 13KB 80ms (12.5fps)[0m
+[0;32mI (31357) example:take_picture: MJPG: 13KB 82ms (12.2fps)[0m
+[0;32mI (31435) example:take_picture: MJPG: 13KB 78ms (12.8fps)[0m
+[0;32mI (31514) example:take_picture: MJPG: 13KB 79ms (12.7fps)[0m
+[0;32mI (31595) example:take_picture: MJPG: 13KB 80ms (12.5fps)[0m
+[0;32mI (31675) example:take_picture: MJPG: 13KB 80ms (12.5fps)[0m
+[0;32mI (31757) example:take_picture: MJPG: 13KB 81ms (12.3fps)[0m
+[0;32mI (31834) example:take_picture: MJPG: 13KB 77ms (13.0fps)[0m
+[0;32mI (31914) example:take_picture: MJPG: 13KB 79ms (12.7fps)[0m
+[0;32mI (31995) example:take_picture: MJPG: 13KB 80ms (12.5fps)[0m
+[0;32mI (32074) example:take_picture: MJPG: 13KB 79ms (12.7fps)[0m
+[0;32mI (32156) example:take_picture: MJPG: 13KB 82ms (12.2fps)[0m
+[0;32mI (32234) example:take_picture: MJPG: 13KB 77ms (13.0fps)[0m
+[0;32mI (32315) example:take_picture: MJPG: 13KB 80ms (12.5fps)[0m
+[0;32mI (32393) example:take_picture: MJPG: 13KB 78ms (12.8fps)[0m
+[0;32mI (32475) example:take_picture: MJPG: 13KB 82ms (12.2fps)[0m
+[0;32mI (32556) example:take_picture: MJPG: 13KB 80ms (12.5fps)[0m
+[0;32mI (32637) example:take_picture: MJPG: 13KB 80ms (12.5fps)[0m
+[0;32mI (32714) example:take_picture: MJPG: 13KB 77ms (13.0fps)[0m
+[0;32mI (32793) example:take_picture: MJPG: 13KB 78ms (12.8fps)[0m
+[0;32mI (32874) example:take_picture: MJPG: 13KB 81ms (12.3fps)[0m
+[0;32mI (32953) example:take_picture: MJPG: 13KB 78ms (12.8fps)[0m
+[0;32mI (33034) example:take_picture: MJPG: 13KB 81ms (12.3fps)[0m
+[0;32mI (33113) example:take_picture: MJPG: 13KB 79ms (12.7fps)[0m
+[0;32mI (33196) example:take_picture: MJPG: 13KB 82ms (12.2fps)[0m
+[0;32mI (33274) example:take_picture: MJPG: 13KB 78ms (12.8fps)[0m
+[0;32mI (33358) example:take_picture: MJPG: 13KB 83ms (12.0fps)[0m
+[0;32mI (33437) example:take_picture: MJPG: 12KB 79ms (12.7fps)[0m
+[0;32mI (33513) example:take_picture: MJPG: 12KB 76ms (13.2fps)[0m
+[0;32mI (33595) example:take_picture: MJPG: 12KB 81ms (12.3fps)[0m
+[0;32mI (33672) example:take_picture: MJPG: 12KB 76ms (13.2fps)[0m
+[0;32mI (33751) example:take_picture: MJPG: 11KB 79ms (12.7fps)[0m
+[0;32mI (33833) example:take_picture: MJPG: 12KB 81ms (12.3fps)[0m
+[0;32mI (33914) example:take_picture: MJPG: 13KB 81ms (12.3fps)[0m
+[0;32mI (34004) example:take_picture: MJPG: 13KB 89ms (11.2fps)[0m
+[0;32mI (34080) example:take_picture: MJPG: 13KB 76ms (13.2fps)[0m
+[0;32mI (34154) example:take_picture: MJPG: 13KB 73ms (13.7fps)[0m
+[0;32mI (34232) example:take_picture: MJPG: 13KB 77ms (13.0fps)[0m
+[0;32mI (34314) example:take_picture: MJPG: 13KB 82ms (12.2fps)[0m
+[0;32mI (34393) example:take_picture: MJPG: 13KB 79ms (12.7fps)[0m
+[0;32mI (34473) example:take_picture: MJPG: 13KB 79ms (12.7fps)[0m
+[0;32mI (34557) example:take_picture: MJPG: 13KB 83ms (12.0fps)[0m
+[0;32mI (34634) example:take_picture: MJPG: 14KB 77ms (13.0fps)[0m
+[0;32mI (34712) example:take_picture: MJPG: 13KB 77ms (13.0fps)[0m
+[0;32mI (34793) example:take_picture: MJPG: 13KB 81ms (12.3fps)[0m
+[0;32mI (34873) example:take_picture: MJPG: 13KB 80ms (12.5fps)[0m
+[0;32mI (34953) example:take_picture: MJPG: 13KB 79ms (12.7fps)[0m
+[0;32mI (35034) example:take_picture: MJPG: 13KB 81ms (12.3fps)[0m
+[0;32mI (35112) example:take_picture: MJPG: 13KB 77ms (13.0fps)[0m
+[0;32mI (35195) example:take_picture: MJPG: 13KB 82ms (12.2fps)[0m
+[0;32mI (35272) example:take_picture: MJPG: 13KB 77ms (13.0fps)[0m
+[0;32mI (35353) example:take_picture: MJPG: 13KB 80ms (12.5fps)[0m
+[0;32mI (35433) example:take_picture: MJPG: 13KB 80ms (12.5fps)[0m
+[0;32mI (35515) example:take_picture: MJPG: 13KB 81ms (12.3fps)[0m
+[0;32mI (35599) example:take_picture: MJPG: 14KB 84ms (11.9fps)[0m
+[0;32mI (35676) example:take_picture: MJPG: 13KB 76ms (13.2fps)[0m
+[0;32mI (35753) example:take_picture: MJPG: 13KB 77ms (13.0fps)[0m
+[0;32mI (35831) example:take_picture: MJPG: 13KB 77ms (13.0fps)[0m
+[0;32mI (35915) example:take_picture: MJPG: 13KB 83ms (12.0fps)[0m
+[0;32mI (35994) example:take_picture: MJPG: 13KB 79ms (12.7fps)[0m
+[0;32mI (36072) example:take_picture: MJPG: 13KB 77ms (13.0fps)[0m
+[0;32mI (36152) example:take_picture: MJPG: 13KB 80ms (12.5fps)[0m
+[0;32mI (36232) example:take_picture: MJPG: 13KB 80ms (12.5fps)[0m
+[0;32mI (36324) example:take_picture: MJPG: 13KB 92ms (10.9fps)[0m
+[0;32mI (36392) example:take_picture: MJPG: 13KB 68ms (14.7fps)[0m
+[0;32mI (36472) example:take_picture: MJPG: 13KB 79ms (12.7fps)[0m
+[0;32mI (36555) example:take_picture: MJPG: 13KB 83ms (12.0fps)[0m
+[0;32mI (36632) example:take_picture: MJPG: 13KB 76ms (13.2fps)[0m
+[0;32mI (36713) example:take_picture: MJPG: 13KB 81ms (12.3fps)[0m
+[0;32mI (36794) example:take_picture: MJPG: 13KB 80ms (12.5fps)[0m
+[0;32mI (36871) example:take_picture: MJPG: 13KB 77ms (13.0fps)[0m
+[0;32mI (36955) example:take_picture: MJPG: 13KB 83ms (12.0fps)[0m
+[0;32mI (37033) example:take_picture: MJPG: 13KB 78ms (12.8fps)[0m
+[0;32mI (37111) example:take_picture: MJPG: 13KB 77ms (13.0fps)[0m
+[0;32mI (37193) example:take_picture: MJPG: 13KB 82ms (12.2fps)[0m
+[0;32mI (37277) example:take_picture: MJPG: 13KB 83ms (12.0fps)[0m
+[0;32mI (37352) example:take_picture: MJPG: 13KB 74ms (13.5fps)[0m
+[0;32mI (37432) example:take_picture: MJPG: 13KB 79ms (12.7fps)[0m
+[0;32mI (37513) example:take_picture: MJPG: 13KB 81ms (12.3fps)[0m
+[0;32mI (37593) example:take_picture: MJPG: 13KB 79ms (12.7fps)[0m
+[0;32mI (37674) example:take_picture: MJPG: 13KB 81ms (12.3fps)[0m
+[0;32mI (37753) example:take_picture: MJPG: 13KB 79ms (12.7fps)[0m
+[0;32mI (37831) example:take_picture: MJPG: 13KB 77ms (13.0fps)[0m
+[0;32mI (37916) example:take_picture: MJPG: 13KB 84ms (11.9fps)[0m
+[0;32mI (38006) example:take_picture: MJPG: 14KB 89ms (11.2fps)[0m
+[0;32mI (38075) example:take_picture: MJPG: 14KB 69ms (14.5fps)[0m
+[0;32mI (38151) example:take_picture: MJPG: 13KB 75ms (13.3fps)[0m
+[0;32mI (38234) example:take_picture: MJPG: 13KB 83ms (12.0fps)[0m
+[0;32mI (38321) example:take_picture: MJPG: 14KB 86ms (11.6fps)[0m
+[0;32mI (38406) example:take_picture: MJPG: 14KB 85ms (11.8fps)[0m
+[0;32mI (38473) example:take_picture: MJPG: 13KB 67ms (14.9fps)[0m
+[0;32mI (38550) example:take_picture: MJPG: 13KB 76ms (13.2fps)[0m
+[0;32mI (38631) example:take_picture: MJPG: 13KB 81ms (12.3fps)[0m
+[0;32mI (38712) example:take_picture: MJPG: 13KB 81ms (12.3fps)[0m
+[0;32mI (38795) example:take_picture: MJPG: 13KB 82ms (12.2fps)[0m
+[0;32mI (38873) example:take_picture: MJPG: 14KB 77ms (13.0fps)[0m
+[0;32mI (38951) example:take_picture: MJPG: 14KB 78ms (12.8fps)[0m
+[0;32mI (39030) example:take_picture: MJPG: 13KB 78ms (12.8fps)[0m
+[0;32mI (39113) example:take_picture: MJPG: 14KB 83ms (12.0fps)[0m
+[0;32mI (39192) example:take_picture: MJPG: 13KB 78ms (12.8fps)[0m
+[0;32mI (39271) example:take_picture: MJPG: 13KB 79ms (12.7fps)[0m
+[0;32mI (39351) example:take_picture: MJPG: 14KB 79ms (12.7fps)[0m
+[0;32mI (39434) example:take_picture: MJPG: 14KB 82ms (12.2fps)[0m
+[0;32mI (39523) example:take_picture: MJPG: 14KB 89ms (11.2fps)[0m
+[0;32mI (39591) example:take_picture: MJPG: 14KB 68ms (14.7fps)[0m
+[0;32mI (39671) example:take_picture: MJPG: 13KB 79ms (12.7fps)[0m
+[0;32mI (39754) example:take_picture: MJPG: 13KB 82ms (12.2fps)[0m
+[0;32mI (39831) example:take_picture: MJPG: 14KB 77ms (13.0fps)[0m
+[0;32mI (39913) example:take_picture: MJPG: 14KB 81ms (12.3fps)[0m
+[0;32mI (39990) example:take_picture: MJPG: 13KB 76ms (13.2fps)[0m
+[0;32mI (40074) example:take_picture: MJPG: 13KB 83ms (12.0fps)[0m
+[0;32mI (40153) example:take_picture: MJPG: 14KB 78ms (12.8fps)[0m
+[0;32mI (40231) example:take_picture: MJPG: 14KB 77ms (13.0fps)[0m
+[0;32mI (40313) example:take_picture: MJPG: 14KB 82ms (12.2fps)[0m
+[0;32mI (40394) example:take_picture: MJPG: 14KB 80ms (12.5fps)[0m
+[0;32mI (40474) example:take_picture: MJPG: 14KB 80ms (12.5fps)[0m
+[0;32mI (40555) example:take_picture: MJPG: 14KB 81ms (12.3fps)[0m
+[0;32mI (40633) example:take_picture: MJPG: 14KB 77ms (13.0fps)[0m
+[0;32mI (40711) example:take_picture: MJPG: 14KB 77ms (13.0fps)[0m
+[0;32mI (40790) example:take_picture: MJPG: 14KB 79ms (12.7fps)[0m
+[0;32mI (40873) example:take_picture: MJPG: 14KB 82ms (12.2fps)[0m
+[0;32mI (40969) example:take_picture: MJPG: 14KB 95ms (10.5fps)[0m
+[0;32mI (41048) example:take_picture: MJPG: 14KB 79ms (12.7fps)[0m
+[0;32mI (41110) example:take_picture: MJPG: 14KB 61ms (16.4fps)[0m
+[0;32mI (41191) example:take_picture: MJPG: 14KB 80ms (12.5fps)[0m
+[0;32mI (41273) example:take_picture: MJPG: 14KB 82ms (12.2fps)[0m
+[0;32mI (41352) example:take_picture: MJPG: 14KB 78ms (12.8fps)[0m
+[0;32mI (41431) example:take_picture: MJPG: 14KB 78ms (12.8fps)[0m
+[0;32mI (41512) example:take_picture: MJPG: 14KB 81ms (12.3fps)[0m
+[0;32mI (41594) example:take_picture: MJPG: 14KB 82ms (12.2fps)[0m
+[0;32mI (41672) example:take_picture: MJPG: 14KB 78ms (12.8fps)[0m
+[0;32mI (41756) example:take_picture: MJPG: 13KB 83ms (12.0fps)[0m
+[0;32mI (41833) example:take_picture: MJPG: 14KB 77ms (13.0fps)[0m
+[0;32mI (41912) example:take_picture: MJPG: 14KB 78ms (12.8fps)[0m
+[0;32mI (41991) example:take_picture: MJPG: 14KB 79ms (12.7fps)[0m
+[0;32mI (42075) example:take_picture: MJPG: 13KB 83ms (12.0fps)[0m
+[0;32mI (42151) example:take_picture: MJPG: 13KB 75ms (13.3fps)[0m
+[0;32mI (42230) example:take_picture: MJPG: 13KB 79ms (12.7fps)[0m
+[0;32mI (42311) example:take_picture: MJPG: 13KB 80ms (12.5fps)[0m
+[0;32mI (42390) example:take_picture: MJPG: 13KB 79ms (12.7fps)[0m
+[0;32mI (42471) example:take_picture: MJPG: 13KB 81ms (12.3fps)[0m
+[0;32mI (42555) example:take_picture: MJPG: 13KB 84ms (11.9fps)[0m
+[0;32mI (42630) example:take_picture: MJPG: 13KB 74ms (13.5fps)[0m
+[0;32mI (42711) example:take_picture: MJPG: 13KB 80ms (12.5fps)[0m
+[0;32mI (42789) example:take_picture: MJPG: 13KB 77ms (13.0fps)[0m
+[0;32mI (42869) example:take_picture: MJPG: 13KB 80ms (12.5fps)[0m

@@ -1,0 +1,8 @@
+CMake Error at /home/edev/esp/esp-idf/tools/cmake/project.cmake:350 (message):
+  Directory specified in EXTRA_COMPONENT_DIRS doesn't exist:
+  /home/edev/Documents/Repositories/Subjects/esp32/esp32-camera
+Call Stack (most recent call first):
+  /home/edev/esp/esp-idf/tools/cmake/project.cmake:434 (__project_init)
+  CMakeLists.txt:9 (project)
+
+

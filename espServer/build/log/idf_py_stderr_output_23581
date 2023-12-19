@@ -1,0 +1,5 @@
+CMake Error at CMakeLists.txt:7 (add_prebuilt_library):
+  Unknown CMake command "add_prebuilt_library".
+
+
+ninja: error: rebuilding 'build.ninja': subcommand failed

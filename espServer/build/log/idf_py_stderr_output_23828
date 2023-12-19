@@ -1,0 +1,11 @@
+CMake Error at /home/edev/esp/esp-idf/tools/cmake/component.cmake:487 (add_library):
+  add_library cannot create target "__idf_main" because another target with
+  the same name already exists.  The existing target is a static library
+  created in source directory
+  "/home/edev/Documents/Repositories/Subjects/esp32/camera_test/main".  See
+  documentation for policy CMP0002 for more details.
+Call Stack (most recent call first):
+  main/CMakeLists.txt:5 (idf_component_register)
+
+
+ninja: error: rebuilding 'build.ninja': subcommand failed

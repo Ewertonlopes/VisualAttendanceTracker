@@ -1,0 +1,764 @@
+ets Jul 29 2019 12:21:46
+
+rs�ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:1
+load:0x3fff0030,len:7488
+load:0x40078000,len:16772
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:4292
+entry 0x4008066c
+[0;32mI (31) boot: ESP-IDF v5.2-dev-2708-g3640dc86bb 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Oct 29 2023 15:46:33[0m
+[0;32mI (33) boot: Multicore bootloader[0m
+[0;32mI (37) boot: chip revision: v3.1[0m
+[0;32mI (41) qio_mode: Enabling default flash chip QIO[0m
+[0;32mI (46) boot.esp32: SPI Speed      : 80MHz[0m
+[0;32mI (51) boot.esp32: SPI Mode       : QIO[0m
+[0;32mI (55) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (60) boot: Enabling RNG early entropy source...[0m
+[0;32mI (65) boot: Partition Table:[0m
+[0;32mI (69) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (76) boot:  0 nvs              WiFi data        01 02 00011000 00006000[0m
+[0;32mI (84) boot:  1 phy_init         RF data          01 01 00017000 00001000[0m
+[0;32mI (91) boot:  2 factory          factory app      00 00 00020000 00100000[0m
+[0;32mI (99) boot: End of partition table[0m
+[0;32mI (103) esp_image: segment 0: paddr=00020020 vaddr=3f400020 size=28c34h (166964) map[0m
+[0;32mI (157) esp_image: segment 1: paddr=00048c5c vaddr=3ffb0000 size=048ach ( 18604) load[0m
+[0;32mI (163) esp_image: segment 2: paddr=0004d510 vaddr=40080000 size=02b08h ( 11016) load[0m
+[0;32mI (167) esp_image: segment 3: paddr=00050020 vaddr=400d0020 size=99588h (628104) map[0m
+[0;32mI (344) esp_image: segment 4: paddr=000e95b0 vaddr=40082b08 size=1771ch ( 96028) load[0m
+[0;32mI (389) boot: Loaded app from partition at offset 0x20000[0m
+[0;32mI (389) boot: Disabling RNG early entropy source...[0m
+[0;32mI (401) cpu_start: Multicore app[0m
+[0;32mI (401) quad_psram: This chip is ESP32-D0WD[0m
+[0;32mI (401) esp_psram: Found 2MB PSRAM device[0m
+[0;32mI (403) esp_psram: Speed: 80MHz[0m
+[0;32mI (407) esp_psram: PSRAM initialized, cache is in low/high (2-core) mode.[0m
+[0;32mI (414) cpu_start: Pro cpu up.[0m
+[0;32mI (418) cpu_start: Starting app cpu, entry point is 0x400814d0[0m
+[0;32mI (0) cpu_start: App cpu up.[0m
+[0;32mI (660) esp_psram: SPI SRAM memory test OK[0m
+[0;32mI (668) cpu_start: Pro cpu start user code[0m
+[0;32mI (668) cpu_start: cpu freq: 240000000 Hz[0m
+[0;32mI (668) cpu_start: Application information:[0m
+[0;32mI (671) cpu_start: Project name:     camera_example[0m
+[0;32mI (676) cpu_start: App version:      f4303e2-dirty[0m
+[0;32mI (682) cpu_start: Compile time:     Nov  2 2023 19:13:07[0m
+[0;32mI (688) cpu_start: ELF file SHA256:  e71f0ce1d...[0m
+[0;32mI (693) cpu_start: ESP-IDF:          v5.2-dev-2708-g3640dc86bb[0m
+[0;32mI (700) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (705) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (709) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (714) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (721) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (727) heap_init: At 3FFBA978 len 00025688 (149 KiB): DRAM[0m
+[0;32mI (734) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (740) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (746) heap_init: At 4009A224 len 00005DDC (23 KiB): IRAM[0m
+[0;32mI (753) esp_psram: Adding pool of 2048K of PSRAM memory to heap allocator[0m
+[0;32mI (761) spi_flash: detected chip: generic[0m
+[0;32mI (765) spi_flash: flash io: qio[0m
+[0;33mW (769) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (780) app_start: Starting scheduler on CPU0[0m
+[0;32mI (784) app_start: Starting scheduler on CPU1[0m
+[0;32mI (784) main_task: Started on CPU0[0m
+[0;32mI (794) esp_psram: Reserving pool of 32K of internal memory for DMA/internal allocations[0m
+[0;32mI (802) main_task: Calling app_main()[0m
+[0;32mI (836) gpio: GPIO[25]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:2 [0m
+[0;32mI (836) cam_hal: cam init ok[0m
+[0;32mI (838) sccb: pin_sda 26 pin_scl 27[0m
+[0;32mI (842) sccb: sccb_i2c_port=1[0m
+[0;32mI (846) gpio: GPIO[32]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (885) camera: Detected camera at address=0x30[0m
+[0;32mI (888) camera: Detected OV2640 camera[0m
+[0;32mI (888) camera: Camera PID=0x26 VER=0x42 MIDL=0x7f MIDH=0xa2[0m
+[0;32mI (968) cam_hal: buffer_size: 32768, half_buffer_size: 4096, node_buffer_size: 2048, node_cnt: 16, total_cnt: 15[0m
+[0;32mI (968) cam_hal: Allocating 61440 Byte frame buffer in PSRAM[0m
+[0;32mI (974) cam_hal: Allocating 61440 Byte frame buffer in PSRAM[0m
+[0;32mI (981) cam_hal: cam config ok[0m
+[0;32mI (984) ov2640: Set PLL: clk_2x: 0, clk_div: 0, pclk_auto: 0, pclk_div: 8[0m
+[0;32mI (1070) example:take_picture: ESP32 IP:192.168.4.1[0m
+I (1071) wifi:wifi driver task: 3ffd371c, prio:23, stack:6656, core=0
+I (1084) wifi:wifi firmware version: e03c1ca
+I (1084) wifi:wifi certification version: v7.0
+I (1084) wifi:config NVS flash: enabled
+I (1085) wifi:config nano formating: disabled
+I (1089) wifi:Init data frame dynamic rx buffer num: 32
+I (1094) wifi:Init management frame dynamic rx buffer num: 32
+I (1099) wifi:Init management short buffer num: 32
+I (1104) wifi:Init static tx buffer num: 16
+I (1108) wifi:Init tx cache buffer num: 32
+I (1112) wifi:Init static rx buffer size: 1600
+I (1116) wifi:Init static rx buffer num: 10
+I (1120) wifi:Init dynamic rx buffer num: 32
+[0;32mI (1124) wifi_init: rx ba win: 6[0m
+[0;32mI (1128) wifi_init: tcpip mbox: 32[0m
+[0;32mI (1132) wifi_init: udp mbox: 6[0m
+[0;32mI (1136) wifi_init: tcp mbox: 6[0m
+[0;32mI (1139) wifi_init: tcp tx win: 5744[0m
+[0;32mI (1144) wifi_init: tcp rx win: 5744[0m
+[0;32mI (1148) wifi_init: tcp mss: 1440[0m
+[0;32mI (1152) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (1156) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (1166) phy_init: phy_version 4771,450c73b,Aug 16 2023,11:03:10[0m
+I (1232) wifi:mode : softAP (fc:b4:67:50:5e:8d)
+I (1233) wifi:Total power save buffer number: 8
+I (1233) wifi:Init max length of beacon: 752/752
+I (1234) wifi:Init max length of beacon: 752/752
+[0;32mI (1239) example:take_picture: wifi_init_softap finished. SSID:VideoStream password:01234567 channel:3[0m
+[0;32mI (1240) esp_netif_lwip: DHCP server started on interface WIFI_AP_DEF with IP: 192.168.4.1[0m
+[0;32mI (1259) main_task: Returned from app_main()[0m
+I (13406) wifi:new:<3,0>, old:<3,1>, ap:<3,1>, sta:<255,255>, prof:3
+I (13406) wifi:station: b2:d4:20:e4:68:ee join, AID=1, bgn, 20
+[0;32mI (13407) example:take_picture: station b2:d4:20:e4:68:ee join, AID=1[0m
+I (13503) wifi:<ba-add>idx:2 (ifx:1, b2:d4:20:e4:68:ee), tid:0, ssn:0, winSize:64
+[0;32mI (14647) esp_netif_lwip: DHCP server assigned IP to a client, IP is: 192.168.4.2[0m
+[0;32mI (14989) example:take_picture: MJPG: 14KB 15ms (66.7fps)[0m
+[0;32mI (15004) example:take_picture: MJPG: 31KB 14ms (71.4fps)[0m
+[0;32mI (15047) example:take_picture: MJPG: 18KB 42ms (23.8fps)[0m
+[0;33mW (15137) httpd_txrx: httpd_sock_err: error in send : 104[0m
+[0;33mW (15138) httpd_uri: httpd_uri: uri handler execution failed[0m
+[0;32mI (25365) example:take_picture: MJPG: 18KB 12ms (83.3fps)[0m
+[0;32mI (25375) example:take_picture: MJPG: 18KB 10ms (100.0fps)[0m
+[0;32mI (25443) example:take_picture: MJPG: 17KB 67ms (14.9fps)[0m
+[0;32mI (25486) example:take_picture: MJPG: 17KB 43ms (23.3fps)[0m
+[0;32mI (25539) example:take_picture: MJPG: 18KB 53ms (18.9fps)[0m
+[0;32mI (25564) example:take_picture: MJPG: 18KB 24ms (41.7fps)[0m
+[0;32mI (25605) example:take_picture: MJPG: 18KB 40ms (25.0fps)[0m
+[0;32mI (25646) example:take_picture: MJPG: 18KB 41ms (24.4fps)[0m
+[0;32mI (25696) example:take_picture: MJPG: 18KB 50ms (20.0fps)[0m
+[0;32mI (25728) example:take_picture: MJPG: 18KB 32ms (31.2fps)[0m
+[0;32mI (25763) example:take_picture: MJPG: 18KB 34ms (29.4fps)[0m
+[0;32mI (25806) example:take_picture: MJPG: 18KB 42ms (23.8fps)[0m
+[0;32mI (25843) example:take_picture: MJPG: 18KB 37ms (27.0fps)[0m
+[0;32mI (25885) example:take_picture: MJPG: 18KB 41ms (24.4fps)[0m
+[0;32mI (25930) example:take_picture: MJPG: 18KB 44ms (22.7fps)[0m
+[0;32mI (25964) example:take_picture: MJPG: 18KB 34ms (29.4fps)[0m
+[0;32mI (26012) example:take_picture: MJPG: 18KB 47ms (21.3fps)[0m
+[0;32mI (26045) example:take_picture: MJPG: 18KB 33ms (30.3fps)[0m
+[0;32mI (26085) example:take_picture: MJPG: 18KB 39ms (25.6fps)[0m
+[0;32mI (26128) example:take_picture: MJPG: 18KB 42ms (23.8fps)[0m
+[0;32mI (26162) example:take_picture: MJPG: 18KB 34ms (29.4fps)[0m
+[0;32mI (26202) example:take_picture: MJPG: 18KB 39ms (25.6fps)[0m
+[0;32mI (26243) example:take_picture: MJPG: 18KB 41ms (24.4fps)[0m
+[0;32mI (26286) example:take_picture: MJPG: 18KB 42ms (23.8fps)[0m
+[0;32mI (26325) example:take_picture: MJPG: 18KB 39ms (25.6fps)[0m
+[0;32mI (26363) example:take_picture: MJPG: 18KB 37ms (27.0fps)[0m
+[0;32mI (26409) example:take_picture: MJPG: 18KB 45ms (22.2fps)[0m
+[0;32mI (26446) example:take_picture: MJPG: 18KB 37ms (27.0fps)[0m
+[0;32mI (26487) example:take_picture: MJPG: 18KB 40ms (25.0fps)[0m
+[0;32mI (26521) example:take_picture: MJPG: 18KB 34ms (29.4fps)[0m
+[0;32mI (26567) example:take_picture: MJPG: 18KB 45ms (22.2fps)[0m
+[0;32mI (26603) example:take_picture: MJPG: 18KB 36ms (27.8fps)[0m
+[0;32mI (26646) example:take_picture: MJPG: 18KB 42ms (23.8fps)[0m
+[0;32mI (26683) example:take_picture: MJPG: 18KB 37ms (27.0fps)[0m
+[0;32mI (26730) example:take_picture: MJPG: 18KB 46ms (21.7fps)[0m
+[0;32mI (26763) example:take_picture: MJPG: 18KB 33ms (30.3fps)[0m
+[0;32mI (26809) example:take_picture: MJPG: 18KB 46ms (21.7fps)[0m
+[0;32mI (26844) example:take_picture: MJPG: 18KB 35ms (28.6fps)[0m
+[0;32mI (26884) example:take_picture: MJPG: 18KB 39ms (25.6fps)[0m
+[0;32mI (26927) example:take_picture: MJPG: 17KB 43ms (23.3fps)[0m
+[0;32mI (26965) example:take_picture: MJPG: 16KB 38ms (26.3fps)[0m
+[0;32mI (27003) example:take_picture: MJPG: 16KB 37ms (27.0fps)[0m
+[0;32mI (27043) example:take_picture: MJPG: 15KB 40ms (25.0fps)[0m
+[0;32mI (27087) example:take_picture: MJPG: 15KB 43ms (23.3fps)[0m
+[0;32mI (27128) example:take_picture: MJPG: 15KB 41ms (24.4fps)[0m
+[0;32mI (27165) example:take_picture: MJPG: 15KB 36ms (27.8fps)[0m
+[0;32mI (27201) example:take_picture: MJPG: 15KB 36ms (27.8fps)[0m
+[0;32mI (27243) example:take_picture: MJPG: 15KB 42ms (23.8fps)[0m
+[0;32mI (27286) example:take_picture: MJPG: 15KB 42ms (23.8fps)[0m
+[0;32mI (27320) example:take_picture: MJPG: 15KB 34ms (29.4fps)[0m
+[0;32mI (27364) example:take_picture: MJPG: 15KB 44ms (22.7fps)[0m
+[0;32mI (27403) example:take_picture: MJPG: 15KB 38ms (26.3fps)[0m
+[0;32mI (27442) example:take_picture: MJPG: 15KB 39ms (25.6fps)[0m
+[0;32mI (27483) example:take_picture: MJPG: 16KB 40ms (25.0fps)[0m
+[0;32mI (27523) example:take_picture: MJPG: 16KB 39ms (25.6fps)[0m
+[0;32mI (27570) example:take_picture: MJPG: 17KB 47ms (21.3fps)[0m
+[0;32mI (27605) example:take_picture: MJPG: 17KB 34ms (29.4fps)[0m
+[0;32mI (27650) example:take_picture: MJPG: 17KB 45ms (22.2fps)[0m
+[0;32mI (27696) example:take_picture: MJPG: 17KB 46ms (21.7fps)[0m
+[0;32mI (27725) example:take_picture: MJPG: 18KB 29ms (34.5fps)[0m
+[0;32mI (27770) example:take_picture: MJPG: 18KB 44ms (22.7fps)[0m
+[0;32mI (27802) example:take_picture: MJPG: 18KB 31ms (32.3fps)[0m
+[0;32mI (27846) example:take_picture: MJPG: 18KB 44ms (22.7fps)[0m
+[0;32mI (27882) example:take_picture: MJPG: 18KB 35ms (28.6fps)[0m
+[0;32mI (27933) example:take_picture: MJPG: 18KB 50ms (20.0fps)[0m
+[0;32mI (27969) example:take_picture: MJPG: 18KB 36ms (27.8fps)[0m
+[0;32mI (28011) example:take_picture: MJPG: 18KB 41ms (24.4fps)[0m
+[0;32mI (28041) example:take_picture: MJPG: 18KB 30ms (33.3fps)[0m
+[0;32mI (28095) example:take_picture: MJPG: 18KB 53ms (18.9fps)[0m
+[0;32mI (28129) example:take_picture: MJPG: 17KB 33ms (30.3fps)[0m
+[0;32mI (28166) example:take_picture: MJPG: 17KB 37ms (27.0fps)[0m
+[0;32mI (28202) example:take_picture: MJPG: 16KB 35ms (28.6fps)[0m
+[0;32mI (28244) example:take_picture: MJPG: 16KB 42ms (23.8fps)[0m
+[0;32mI (28287) example:take_picture: MJPG: 16KB 42ms (23.8fps)[0m
+[0;32mI (28321) example:take_picture: MJPG: 16KB 34ms (29.4fps)[0m
+[0;32mI (28368) example:take_picture: MJPG: 16KB 46ms (21.7fps)[0m
+[0;32mI (28401) example:take_picture: MJPG: 16KB 33ms (30.3fps)[0m
+[0;32mI (28440) example:take_picture: MJPG: 16KB 38ms (26.3fps)[0m
+[0;32mI (28483) example:take_picture: MJPG: 17KB 43ms (23.3fps)[0m
+[0;32mI (28525) example:take_picture: MJPG: 17KB 41ms (24.4fps)[0m
+[0;32mI (28566) example:take_picture: MJPG: 18KB 41ms (24.4fps)[0m
+[0;32mI (28611) example:take_picture: MJPG: 18KB 44ms (22.7fps)[0m
+[0;32mI (28645) example:take_picture: MJPG: 18KB 34ms (29.4fps)[0m
+[0;32mI (28712) example:take_picture: MJPG: 18KB 66ms (15.2fps)[0m
+[0;32mI (28798) example:take_picture: MJPG: 18KB 86ms (11.6fps)[0m
+[0;32mI (28851) example:take_picture: MJPG: 18KB 52ms (19.2fps)[0m
+[0;32mI (28896) example:take_picture: MJPG: 18KB 45ms (22.2fps)[0m
+[0;32mI (28920) example:take_picture: MJPG: 18KB 24ms (41.7fps)[0m
+[0;32mI (28975) example:take_picture: MJPG: 18KB 54ms (18.5fps)[0m
+[0;32mI (29010) example:take_picture: MJPG: 18KB 35ms (28.6fps)[0m
+[0;32mI (29040) example:take_picture: MJPG: 18KB 29ms (34.5fps)[0m
+[0;32mI (29082) example:take_picture: MJPG: 17KB 41ms (24.4fps)[0m
+[0;32mI (29124) example:take_picture: MJPG: 16KB 42ms (23.8fps)[0m
+[0;32mI (29159) example:take_picture: MJPG: 16KB 35ms (28.6fps)[0m
+[0;32mI (29206) example:take_picture: MJPG: 16KB 47ms (21.3fps)[0m
+[0;32mI (29242) example:take_picture: MJPG: 16KB 35ms (28.6fps)[0m
+[0;32mI (29288) example:take_picture: MJPG: 16KB 45ms (22.2fps)[0m
+[0;32mI (29324) example:take_picture: MJPG: 17KB 36ms (27.8fps)[0m
+[0;32mI (29363) example:take_picture: MJPG: 17KB 38ms (26.3fps)[0m
+[0;32mI (29405) example:take_picture: MJPG: 17KB 42ms (23.8fps)[0m
+[0;32mI (29445) example:take_picture: MJPG: 17KB 39ms (25.6fps)[0m
+[0;32mI (29485) example:take_picture: MJPG: 17KB 39ms (25.6fps)[0m
+[0;32mI (29523) example:take_picture: MJPG: 17KB 38ms (26.3fps)[0m
+[0;32mI (29563) example:take_picture: MJPG: 17KB 40ms (25.0fps)[0m
+[0;32mI (29603) example:take_picture: MJPG: 17KB 39ms (25.6fps)[0m
+[0;32mI (29641) example:take_picture: MJPG: 16KB 38ms (26.3fps)[0m
+[0;32mI (29681) example:take_picture: MJPG: 16KB 39ms (25.6fps)[0m
+[0;32mI (29727) example:take_picture: MJPG: 17KB 46ms (21.7fps)[0m
+[0;32mI (29768) example:take_picture: MJPG: 18KB 40ms (25.0fps)[0m
+[0;32mI (29804) example:take_picture: MJPG: 18KB 36ms (27.8fps)[0m
+[0;32mI (29842) example:take_picture: MJPG: 18KB 37ms (27.0fps)[0m
+[0;32mI (29885) example:take_picture: MJPG: 18KB 42ms (23.8fps)[0m
+[0;32mI (29931) example:take_picture: MJPG: 18KB 45ms (22.2fps)[0m
+[0;32mI (29963) example:take_picture: MJPG: 18KB 32ms (31.2fps)[0m
+[0;32mI (30002) example:take_picture: MJPG: 18KB 38ms (26.3fps)[0m
+[0;32mI (30043) example:take_picture: MJPG: 18KB 40ms (25.0fps)[0m
+[0;32mI (30085) example:take_picture: MJPG: 18KB 41ms (24.4fps)[0m
+[0;32mI (30132) example:take_picture: MJPG: 18KB 47ms (21.3fps)[0m
+[0;32mI (30165) example:take_picture: MJPG: 18KB 33ms (30.3fps)[0m
+[0;32mI (30206) example:take_picture: MJPG: 18KB 40ms (25.0fps)[0m
+[0;32mI (30244) example:take_picture: MJPG: 18KB 38ms (26.3fps)[0m
+[0;32mI (30286) example:take_picture: MJPG: 18KB 41ms (24.4fps)[0m
+[0;32mI (30327) example:take_picture: MJPG: 18KB 40ms (25.0fps)[0m
+[0;32mI (30360) example:take_picture: MJPG: 18KB 33ms (30.3fps)[0m
+[0;32mI (30400) example:take_picture: MJPG: 18KB 39ms (25.6fps)[0m
+[0;32mI (30445) example:take_picture: MJPG: 18KB 44ms (22.7fps)[0m
+[0;32mI (30486) example:take_picture: MJPG: 18KB 41ms (24.4fps)[0m
+[0;32mI (30522) example:take_picture: MJPG: 18KB 36ms (27.8fps)[0m
+[0;32mI (30564) example:take_picture: MJPG: 18KB 41ms (24.4fps)[0m
+[0;32mI (30602) example:take_picture: MJPG: 18KB 37ms (27.0fps)[0m
+[0;32mI (31881) example:take_picture: MJPG: 18KB 1279ms (0.8fps)[0m
+[0;32mI (31894) example:take_picture: MJPG: 18KB 12ms (83.3fps)[0m
+[0;32mI (31970) example:take_picture: MJPG: 18KB 75ms (13.3fps)[0m
+[0;32mI (32005) example:take_picture: MJPG: 17KB 35ms (28.6fps)[0m
+[0;32mI (32044) example:take_picture: MJPG: 18KB 38ms (26.3fps)[0m
+[0;32mI (32087) example:take_picture: MJPG: 18KB 42ms (23.8fps)[0m
+[0;32mI (32122) example:take_picture: MJPG: 17KB 35ms (28.6fps)[0m
+[0;32mI (32164) example:take_picture: MJPG: 18KB 42ms (23.8fps)[0m
+[0;32mI (32202) example:take_picture: MJPG: 18KB 37ms (27.0fps)[0m
+[0;32mI (32242) example:take_picture: MJPG: 18KB 39ms (25.6fps)[0m
+[0;32mI (32288) example:take_picture: MJPG: 18KB 46ms (21.7fps)[0m
+[0;32mI (32320) example:take_picture: MJPG: 18KB 31ms (32.3fps)[0m
+[0;32mI (32361) example:take_picture: MJPG: 17KB 41ms (24.4fps)[0m
+[0;32mI (32404) example:take_picture: MJPG: 18KB 42ms (23.8fps)[0m
+[0;32mI (32448) example:take_picture: MJPG: 18KB 43ms (23.3fps)[0m
+[0;32mI (32485) example:take_picture: MJPG: 18KB 37ms (27.0fps)[0m
+[0;32mI (32523) example:take_picture: MJPG: 18KB 37ms (27.0fps)[0m
+[0;32mI (32563) example:take_picture: MJPG: 17KB 40ms (25.0fps)[0m
+[0;32mI (32605) example:take_picture: MJPG: 18KB 41ms (24.4fps)[0m
+[0;32mI (32649) example:take_picture: MJPG: 18KB 44ms (22.7fps)[0m
+[0;32mI (32684) example:take_picture: MJPG: 18KB 35ms (28.6fps)[0m
+[0;32mI (32725) example:take_picture: MJPG: 18KB 41ms (24.4fps)[0m
+[0;32mI (32764) example:take_picture: MJPG: 17KB 38ms (26.3fps)[0m
+[0;32mI (32810) example:take_picture: MJPG: 17KB 46ms (21.7fps)[0m
+[0;32mI (32842) example:take_picture: MJPG: 17KB 32ms (31.2fps)[0m
+[0;32mI (32895) example:take_picture: MJPG: 17KB 52ms (19.2fps)[0m
+[0;32mI (32959) example:take_picture: MJPG: 18KB 64ms (15.6fps)[0m
+[0;32mI (32971) example:take_picture: MJPG: 17KB 11ms (90.9fps)[0m
+[0;32mI (33044) example:take_picture: MJPG: 18KB 73ms (13.7fps)[0m
+[0;32mI (33078) example:take_picture: MJPG: 17KB 34ms (29.4fps)[0m
+[0;32mI (33123) example:take_picture: MJPG: 17KB 45ms (22.2fps)[0m
+[0;32mI (33162) example:take_picture: MJPG: 18KB 39ms (25.6fps)[0m
+[0;32mI (33207) example:take_picture: MJPG: 18KB 44ms (22.7fps)[0m
+[0;32mI (33243) example:take_picture: MJPG: 17KB 35ms (28.6fps)[0m
+[0;32mI (33281) example:take_picture: MJPG: 16KB 38ms (26.3fps)[0m
+[0;32mI (33318) example:take_picture: MJPG: 15KB 37ms (27.0fps)[0m
+[0;32mI (33358) example:take_picture: MJPG: 15KB 39ms (25.6fps)[0m
+[0;32mI (33403) example:take_picture: MJPG: 14KB 44ms (22.7fps)[0m
+[0;32mI (33447) example:take_picture: MJPG: 14KB 44ms (22.7fps)[0m
+[0;32mI (33483) example:take_picture: MJPG: 13KB 36ms (27.8fps)[0m
+[0;32mI (33523) example:take_picture: MJPG: 13KB 40ms (25.0fps)[0m
+[0;32mI (33563) example:take_picture: MJPG: 13KB 39ms (25.6fps)[0m
+[0;32mI (33600) example:take_picture: MJPG: 13KB 37ms (27.0fps)[0m
+[0;32mI (33639) example:take_picture: MJPG: 12KB 38ms (26.3fps)[0m
+[0;32mI (33678) example:take_picture: MJPG: 12KB 38ms (26.3fps)[0m
+[0;32mI (33723) example:take_picture: MJPG: 12KB 44ms (22.7fps)[0m
+[0;32mI (33759) example:take_picture: MJPG: 12KB 36ms (27.8fps)[0m
+[0;32mI (33796) example:take_picture: MJPG: 12KB 36ms (27.8fps)[0m
+[0;32mI (33840) example:take_picture: MJPG: 12KB 43ms (23.3fps)[0m
+[0;32mI (33877) example:take_picture: MJPG: 12KB 37ms (27.0fps)[0m
+[0;32mI (33917) example:take_picture: MJPG: 12KB 39ms (25.6fps)[0m
+[0;32mI (33956) example:take_picture: MJPG: 12KB 39ms (25.6fps)[0m
+[0;32mI (33996) example:take_picture: MJPG: 12KB 39ms (25.6fps)[0m
+[0;32mI (34036) example:take_picture: MJPG: 12KB 40ms (25.0fps)[0m
+[0;32mI (34078) example:take_picture: MJPG: 12KB 42ms (23.8fps)[0m
+[0;32mI (34116) example:take_picture: MJPG: 12KB 37ms (27.0fps)[0m
+[0;32mI (34159) example:take_picture: MJPG: 12KB 43ms (23.3fps)[0m
+[0;32mI (34198) example:take_picture: MJPG: 12KB 38ms (26.3fps)[0m
+[0;32mI (34237) example:take_picture: MJPG: 12KB 39ms (25.6fps)[0m
+[0;32mI (34287) example:take_picture: MJPG: 12KB 49ms (20.4fps)[0m
+[0;32mI (34319) example:take_picture: MJPG: 12KB 32ms (31.2fps)[0m
+[0;32mI (34363) example:take_picture: MJPG: 12KB 44ms (22.7fps)[0m
+[0;32mI (34399) example:take_picture: MJPG: 12KB 35ms (28.6fps)[0m
+[0;32mI (34449) example:take_picture: MJPG: 12KB 50ms (20.0fps)[0m
+[0;32mI (34481) example:take_picture: MJPG: 12KB 32ms (31.2fps)[0m
+[0;32mI (34516) example:take_picture: MJPG: 13KB 34ms (29.4fps)[0m
+[0;32mI (34556) example:take_picture: MJPG: 13KB 40ms (25.0fps)[0m
+[0;32mI (34596) example:take_picture: MJPG: 13KB 39ms (25.6fps)[0m
+[0;32mI (34636) example:take_picture: MJPG: 13KB 40ms (25.0fps)[0m
+[0;32mI (34678) example:take_picture: MJPG: 13KB 41ms (24.4fps)[0m
+[0;32mI (34715) example:take_picture: MJPG: 13KB 37ms (27.0fps)[0m
+[0;32mI (34758) example:take_picture: MJPG: 14KB 42ms (23.8fps)[0m
+[0;32mI (34797) example:take_picture: MJPG: 14KB 39ms (25.6fps)[0m
+[0;32mI (34839) example:take_picture: MJPG: 15KB 41ms (24.4fps)[0m
+[0;32mI (34880) example:take_picture: MJPG: 16KB 41ms (24.4fps)[0m
+[0;32mI (34923) example:take_picture: MJPG: 15KB 42ms (23.8fps)[0m
+[0;32mI (34966) example:take_picture: MJPG: 15KB 43ms (23.3fps)[0m
+[0;32mI (35011) example:take_picture: MJPG: 15KB 44ms (22.7fps)[0m
+[0;32mI (35040) example:take_picture: MJPG: 15KB 28ms (35.7fps)[0m
+[0;32mI (35084) example:take_picture: MJPG: 15KB 43ms (23.3fps)[0m
+[0;32mI (35123) example:take_picture: MJPG: 15KB 39ms (25.6fps)[0m
+[0;32mI (35161) example:take_picture: MJPG: 16KB 37ms (27.0fps)[0m
+[0;32mI (35215) example:take_picture: MJPG: 16KB 54ms (18.5fps)[0m
+[0;32mI (35240) example:take_picture: MJPG: 18KB 24ms (41.7fps)[0m
+[0;32mI (35280) example:take_picture: MJPG: 18KB 39ms (25.6fps)[0m
+[0;32mI (35323) example:take_picture: MJPG: 18KB 43ms (23.3fps)[0m
+[0;32mI (35364) example:take_picture: MJPG: 18KB 40ms (25.0fps)[0m
+[0;32mI (35399) example:take_picture: MJPG: 18KB 35ms (28.6fps)[0m
+[0;32mI (35439) example:take_picture: MJPG: 18KB 39ms (25.6fps)[0m
+[0;32mI (35485) example:take_picture: MJPG: 18KB 46ms (21.7fps)[0m
+[0;32mI (35532) example:take_picture: MJPG: 18KB 46ms (21.7fps)[0m
+[0;32mI (35560) example:take_picture: MJPG: 18KB 28ms (35.7fps)[0m
+[0;32mI (35608) example:take_picture: MJPG: 18KB 47ms (21.3fps)[0m
+[0;32mI (35649) example:take_picture: MJPG: 18KB 40ms (25.0fps)[0m
+[0;32mI (35684) example:take_picture: MJPG: 18KB 35ms (28.6fps)[0m
+[0;32mI (35721) example:take_picture: MJPG: 18KB 36ms (27.8fps)[0m
+[0;32mI (35760) example:take_picture: MJPG: 18KB 39ms (25.6fps)[0m
+[0;32mI (35805) example:take_picture: MJPG: 18KB 44ms (22.7fps)[0m
+[0;32mI (35841) example:take_picture: MJPG: 18KB 35ms (28.6fps)[0m
+[0;32mI (35885) example:take_picture: MJPG: 18KB 44ms (22.7fps)[0m
+[0;32mI (35919) example:take_picture: MJPG: 18KB 34ms (29.4fps)[0m
+[0;32mI (35960) example:take_picture: MJPG: 18KB 41ms (24.4fps)[0m
+[0;32mI (35999) example:take_picture: MJPG: 18KB 38ms (26.3fps)[0m
+[0;32mI (36044) example:take_picture: MJPG: 18KB 45ms (22.2fps)[0m
+[0;32mI (36080) example:take_picture: MJPG: 18KB 35ms (28.6fps)[0m
+[0;32mI (36120) example:take_picture: MJPG: 18KB 40ms (25.0fps)[0m
+[0;32mI (36161) example:take_picture: MJPG: 18KB 41ms (24.4fps)[0m
+[0;32mI (36205) example:take_picture: MJPG: 18KB 44ms (22.7fps)[0m
+[0;32mI (36244) example:take_picture: MJPG: 18KB 38ms (26.3fps)[0m
+[0;32mI (36294) example:take_picture: MJPG: 18KB 50ms (20.0fps)[0m
+[0;32mI (36320) example:take_picture: MJPG: 18KB 25ms (40.0fps)[0m
+[0;32mI (36359) example:take_picture: MJPG: 18KB 39ms (25.6fps)[0m
+[0;32mI (36400) example:take_picture: MJPG: 18KB 40ms (25.0fps)[0m
+[0;32mI (36448) example:take_picture: MJPG: 18KB 47ms (21.3fps)[0m
+[0;32mI (36482) example:take_picture: MJPG: 18KB 33ms (30.3fps)[0m
+[0;32mI (36521) example:take_picture: MJPG: 18KB 38ms (26.3fps)[0m
+[0;32mI (36565) example:take_picture: MJPG: 18KB 44ms (22.7fps)[0m
+[0;32mI (36599) example:take_picture: MJPG: 18KB 33ms (30.3fps)[0m
+[0;32mI (36639) example:take_picture: MJPG: 18KB 40ms (25.0fps)[0m
+[0;32mI (36682) example:take_picture: MJPG: 18KB 43ms (23.3fps)[0m
+[0;32mI (36725) example:take_picture: MJPG: 18KB 43ms (23.3fps)[0m
+[0;32mI (36761) example:take_picture: MJPG: 17KB 35ms (28.6fps)[0m
+[0;32mI (36799) example:take_picture: MJPG: 18KB 37ms (27.0fps)[0m
+[0;32mI (36844) example:take_picture: MJPG: 17KB 44ms (22.7fps)[0m
+[0;32mI (36885) example:take_picture: MJPG: 18KB 41ms (24.4fps)[0m
+[0;32mI (36919) example:take_picture: MJPG: 18KB 34ms (29.4fps)[0m
+[0;32mI (36960) example:take_picture: MJPG: 18KB 41ms (24.4fps)[0m
+[0;32mI (37002) example:take_picture: MJPG: 18KB 41ms (24.4fps)[0m
+[0;32mI (37047) example:take_picture: MJPG: 18KB 45ms (22.2fps)[0m
+[0;32mI (37084) example:take_picture: MJPG: 16KB 36ms (27.8fps)[0m
+[0;32mI (37117) example:take_picture: MJPG: 15KB 32ms (31.2fps)[0m
+[0;32mI (37163) example:take_picture: MJPG: 14KB 46ms (21.7fps)[0m
+[0;32mI (37201) example:take_picture: MJPG: 14KB 37ms (27.0fps)[0m
+[0;32mI (37237) example:take_picture: MJPG: 14KB 36ms (27.8fps)[0m
+[0;32mI (37287) example:take_picture: MJPG: 14KB 49ms (20.4fps)[0m
+[0;32mI (37319) example:take_picture: MJPG: 15KB 31ms (32.3fps)[0m
+[0;32mI (37358) example:take_picture: MJPG: 16KB 38ms (26.3fps)[0m
+[0;32mI (37410) example:take_picture: MJPG: 16KB 51ms (19.6fps)[0m
+[0;32mI (37437) example:take_picture: MJPG: 15KB 26ms (38.5fps)[0m
+[0;32mI (37476) example:take_picture: MJPG: 14KB 39ms (25.6fps)[0m
+[0;32mI (37520) example:take_picture: MJPG: 13KB 44ms (22.7fps)[0m
+[0;32mI (37556) example:take_picture: MJPG: 15KB 36ms (27.8fps)[0m
+[0;32mI (37600) example:take_picture: MJPG: 17KB 43ms (23.3fps)[0m
+[0;32mI (37637) example:take_picture: MJPG: 15KB 37ms (27.0fps)[0m
+[0;32mI (37682) example:take_picture: MJPG: 17KB 44ms (22.7fps)[0m
+[0;32mI (37723) example:take_picture: MJPG: 17KB 40ms (25.0fps)[0m
+[0;32mI (37756) example:take_picture: MJPG: 16KB 32ms (31.2fps)[0m
+[0;32mI (37799) example:take_picture: MJPG: 15KB 43ms (23.3fps)[0m
+[0;32mI (37840) example:take_picture: MJPG: 17KB 41ms (24.4fps)[0m
+[0;32mI (37883) example:take_picture: MJPG: 17KB 42ms (23.8fps)[0m
+[0;32mI (37920) example:take_picture: MJPG: 16KB 37ms (27.0fps)[0m
+[0;32mI (37957) example:take_picture: MJPG: 14KB 36ms (27.8fps)[0m
+[0;32mI (37997) example:take_picture: MJPG: 14KB 39ms (25.6fps)[0m
+[0;32mI (38035) example:take_picture: MJPG: 13KB 38ms (26.3fps)[0m
+[0;32mI (38075) example:take_picture: MJPG: 12KB 40ms (25.0fps)[0m
+[0;32mI (38123) example:take_picture: MJPG: 13KB 47ms (21.3fps)[0m
+[0;32mI (38154) example:take_picture: MJPG: 12KB 31ms (32.3fps)[0m
+[0;32mI (38195) example:take_picture: MJPG: 13KB 40ms (25.0fps)[0m
+[0;32mI (38235) example:take_picture: MJPG: 12KB 40ms (25.0fps)[0m
+[0;32mI (38278) example:take_picture: MJPG: 12KB 42ms (23.8fps)[0m
+[0;32mI (38317) example:take_picture: MJPG: 12KB 38ms (26.3fps)[0m
+[0;32mI (38357) example:take_picture: MJPG: 12KB 39ms (25.6fps)[0m
+[0;32mI (38413) example:take_picture: MJPG: 12KB 56ms (17.9fps)[0m
+[0;32mI (38437) example:take_picture: MJPG: 12KB 24ms (41.7fps)[0m
+[0;32mI (38478) example:take_picture: MJPG: 13KB 40ms (25.0fps)[0m
+[0;32mI (38520) example:take_picture: MJPG: 18KB 42ms (23.8fps)[0m
+[0;32mI (38556) example:take_picture: MJPG: 15KB 36ms (27.8fps)[0m
+[0;32mI (38599) example:take_picture: MJPG: 15KB 43ms (23.3fps)[0m
+[0;32mI (38642) example:take_picture: MJPG: 17KB 42ms (23.8fps)[0m
+[0;32mI (38679) example:take_picture: MJPG: 17KB 37ms (27.0fps)[0m
+[0;32mI (38718) example:take_picture: MJPG: 19KB 38ms (26.3fps)[0m
+[0;32mI (39968) example:take_picture: MJPG: 16KB 1249ms (0.8fps)[0m
+[0;32mI (39985) example:take_picture: MJPG: 16KB 16ms (62.5fps)[0m
+[0;32mI (40041) example:take_picture: MJPG: 18KB 56ms (17.9fps)[0m
+[0;32mI (40078) example:take_picture: MJPG: 20KB 36ms (27.8fps)[0m
+[0;32mI (40121) example:take_picture: MJPG: 21KB 42ms (23.8fps)[0m
+[0;32mI (40167) example:take_picture: MJPG: 19KB 45ms (22.2fps)[0m
+[0;32mI (40202) example:take_picture: MJPG: 20KB 35ms (28.6fps)[0m
+[0;32mI (40243) example:take_picture: MJPG: 19KB 41ms (24.4fps)[0m
+[0;32mI (40280) example:take_picture: MJPG: 18KB 36ms (27.8fps)[0m
+[0;32mI (40316) example:take_picture: MJPG: 19KB 36ms (27.8fps)[0m
+[0;32mI (40359) example:take_picture: MJPG: 16KB 43ms (23.3fps)[0m
+[0;32mI (40398) example:take_picture: MJPG: 19KB 39ms (25.6fps)[0m
+[0;32mI (40440) example:take_picture: MJPG: 18KB 42ms (23.8fps)[0m
+[0;32mI (40486) example:take_picture: MJPG: 20KB 45ms (22.2fps)[0m
+[0;32mI (40526) example:take_picture: MJPG: 20KB 40ms (25.0fps)[0m
+[0;32mI (40567) example:take_picture: MJPG: 21KB 40ms (25.0fps)[0m
+[0;32mI (40604) example:take_picture: MJPG: 22KB 37ms (27.0fps)[0m
+[0;32mI (40642) example:take_picture: MJPG: 23KB 38ms (26.3fps)[0m
+[0;32mI (40691) example:take_picture: MJPG: 19KB 48ms (20.8fps)[0m
+[0;32mI (40728) example:take_picture: MJPG: 20KB 36ms (27.8fps)[0m
+[0;32mI (40757) example:take_picture: MJPG: 19KB 29ms (34.5fps)[0m
+[0;32mI (40800) example:take_picture: MJPG: 21KB 42ms (23.8fps)[0m
+[0;32mI (40840) example:take_picture: MJPG: 19KB 39ms (25.6fps)[0m
+[0;32mI (40882) example:take_picture: MJPG: 20KB 42ms (23.8fps)[0m
+[0;32mI (40921) example:take_picture: MJPG: 21KB 38ms (26.3fps)[0m
+[0;32mI (40964) example:take_picture: MJPG: 21KB 43ms (23.3fps)[0m
+[0;32mI (41000) example:take_picture: MJPG: 22KB 36ms (27.8fps)[0m
+[0;32mI (41044) example:take_picture: MJPG: 21KB 43ms (23.3fps)[0m
+[0;32mI (41082) example:take_picture: MJPG: 19KB 37ms (27.0fps)[0m
+[0;32mI (41123) example:take_picture: MJPG: 20KB 40ms (25.0fps)[0m
+[0;32mI (41163) example:take_picture: MJPG: 19KB 40ms (25.0fps)[0m
+[0;32mI (41199) example:take_picture: MJPG: 17KB 36ms (27.8fps)[0m
+[0;32mI (41233) example:take_picture: MJPG: 16KB 33ms (30.3fps)[0m
+[0;32mI (41280) example:take_picture: MJPG: 15KB 47ms (21.3fps)[0m
+[0;32mI (41315) example:take_picture: MJPG: 15KB 34ms (29.4fps)[0m
+[0;32mI (41355) example:take_picture: MJPG: 15KB 40ms (25.0fps)[0m
+[0;32mI (41400) example:take_picture: MJPG: 16KB 44ms (22.7fps)[0m
+[0;32mI (41436) example:take_picture: MJPG: 17KB 35ms (28.6fps)[0m
+[0;32mI (41478) example:take_picture: MJPG: 17KB 41ms (24.4fps)[0m
+[0;32mI (41522) example:take_picture: MJPG: 17KB 44ms (22.7fps)[0m
+[0;32mI (41557) example:take_picture: MJPG: 18KB 34ms (29.4fps)[0m
+[0;32mI (41598) example:take_picture: MJPG: 17KB 41ms (24.4fps)[0m
+[0;32mI (41640) example:take_picture: MJPG: 16KB 42ms (23.8fps)[0m
+[0;32mI (41684) example:take_picture: MJPG: 17KB 43ms (23.3fps)[0m
+[0;32mI (41719) example:take_picture: MJPG: 17KB 34ms (29.4fps)[0m
+[0;32mI (41755) example:take_picture: MJPG: 15KB 36ms (27.8fps)[0m
+[0;32mI (41801) example:take_picture: MJPG: 14KB 45ms (22.2fps)[0m
+[0;32mI (41835) example:take_picture: MJPG: 15KB 34ms (29.4fps)[0m
+[0;32mI (41879) example:take_picture: MJPG: 14KB 43ms (23.3fps)[0m
+[0;32mI (41916) example:take_picture: MJPG: 14KB 37ms (27.0fps)[0m
+[0;32mI (41954) example:take_picture: MJPG: 15KB 37ms (27.0fps)[0m
+[0;32mI (41997) example:take_picture: MJPG: 15KB 42ms (23.8fps)[0m
+[0;32mI (42034) example:take_picture: MJPG: 16KB 37ms (27.0fps)[0m
+[0;32mI (42078) example:take_picture: MJPG: 16KB 43ms (23.3fps)[0m
+[0;32mI (42120) example:take_picture: MJPG: 15KB 41ms (24.4fps)[0m
+[0;32mI (42155) example:take_picture: MJPG: 14KB 35ms (28.6fps)[0m
+[0;32mI (42195) example:take_picture: MJPG: 14KB 39ms (25.6fps)[0m
+[0;32mI (42236) example:take_picture: MJPG: 15KB 40ms (25.0fps)[0m
+[0;32mI (42279) example:take_picture: MJPG: 14KB 43ms (23.3fps)[0m
+[0;32mI (42315) example:take_picture: MJPG: 15KB 36ms (27.8fps)[0m
+[0;32mI (42355) example:take_picture: MJPG: 14KB 39ms (25.6fps)[0m
+[0;32mI (42403) example:take_picture: MJPG: 14KB 48ms (20.8fps)[0m
+[0;32mI (42436) example:take_picture: MJPG: 14KB 33ms (30.3fps)[0m
+[0;32mI (42473) example:take_picture: MJPG: 14KB 37ms (27.0fps)[0m
+[0;32mI (42516) example:take_picture: MJPG: 14KB 42ms (23.8fps)[0m
+[0;32mI (42554) example:take_picture: MJPG: 14KB 38ms (26.3fps)[0m
+[0;32mI (42596) example:take_picture: MJPG: 14KB 42ms (23.8fps)[0m
+[0;32mI (42636) example:take_picture: MJPG: 14KB 39ms (25.6fps)[0m
+[0;32mI (42675) example:take_picture: MJPG: 14KB 39ms (25.6fps)[0m
+[0;32mI (42714) example:take_picture: MJPG: 14KB 39ms (25.6fps)[0m
+[0;32mI (42757) example:take_picture: MJPG: 14KB 42ms (23.8fps)[0m
+[0;32mI (42799) example:take_picture: MJPG: 14KB 42ms (23.8fps)[0m
+[0;32mI (42836) example:take_picture: MJPG: 15KB 36ms (27.8fps)[0m
+[0;32mI (42874) example:take_picture: MJPG: 15KB 37ms (27.0fps)[0m
+[0;32mI (42915) example:take_picture: MJPG: 15KB 41ms (24.4fps)[0m
+[0;32mI (42957) example:take_picture: MJPG: 16KB 42ms (23.8fps)[0m
+[0;32mI (42997) example:take_picture: MJPG: 15KB 39ms (25.6fps)[0m
+[0;32mI (43043) example:take_picture: MJPG: 15KB 46ms (21.7fps)[0m
+[0;32mI (43076) example:take_picture: MJPG: 15KB 33ms (30.3fps)[0m
+[0;32mI (43123) example:take_picture: MJPG: 15KB 46ms (21.7fps)[0m
+[0;32mI (43156) example:take_picture: MJPG: 16KB 32ms (31.2fps)[0m
+[0;32mI (43195) example:take_picture: MJPG: 16KB 39ms (25.6fps)[0m
+[0;32mI (43239) example:take_picture: MJPG: 18KB 43ms (23.3fps)[0m
+[0;32mI (43277) example:take_picture: MJPG: 18KB 38ms (26.3fps)[0m
+[0;32mI (43333) example:take_picture: MJPG: 17KB 55ms (18.2fps)[0m
+[0;32mI (43362) example:take_picture: MJPG: 18KB 29ms (34.5fps)[0m
+[0;32mI (43403) example:take_picture: MJPG: 17KB 41ms (24.4fps)[0m
+[0;32mI (43442) example:take_picture: MJPG: 18KB 38ms (26.3fps)[0m
+[0;32mI (43483) example:take_picture: MJPG: 17KB 41ms (24.4fps)[0m
+[0;32mI (43519) example:take_picture: MJPG: 18KB 35ms (28.6fps)[0m
+[0;32mI (43564) example:take_picture: MJPG: 16KB 45ms (22.2fps)[0m
+[0;32mI (43597) example:take_picture: MJPG: 17KB 32ms (31.2fps)[0m
+[0;32mI (43637) example:take_picture: MJPG: 16KB 40ms (25.0fps)[0m
+[0;32mI (43677) example:take_picture: MJPG: 16KB 40ms (25.0fps)[0m
+[0;32mI (43721) example:take_picture: MJPG: 15KB 44ms (22.7fps)[0m
+[0;32mI (43757) example:take_picture: MJPG: 15KB 36ms (27.8fps)[0m
+[0;32mI (43791) example:take_picture: MJPG: 14KB 33ms (30.3fps)[0m
+[0;32mI (43840) example:take_picture: MJPG: 13KB 48ms (20.8fps)[0m
+[0;32mI (43877) example:take_picture: MJPG: 13KB 36ms (27.8fps)[0m
+[0;32mI (43922) example:take_picture: MJPG: 13KB 45ms (22.2fps)[0m
+[0;32mI (43964) example:take_picture: MJPG: 14KB 42ms (23.8fps)[0m
+[0;32mI (43992) example:take_picture: MJPG: 14KB 28ms (35.7fps)[0m
+[0;32mI (44033) example:take_picture: MJPG: 14KB 40ms (25.0fps)[0m
+[0;32mI (44074) example:take_picture: MJPG: 14KB 41ms (24.4fps)[0m
+[0;32mI (44115) example:take_picture: MJPG: 14KB 41ms (24.4fps)[0m
+[0;32mI (44152) example:take_picture: MJPG: 13KB 37ms (27.0fps)[0m
+[0;32mI (44199) example:take_picture: MJPG: 13KB 46ms (21.7fps)[0m
+[0;32mI (44242) example:take_picture: MJPG: 14KB 42ms (23.8fps)[0m
+[0;32mI (44274) example:take_picture: MJPG: 14KB 32ms (31.2fps)[0m
+[0;32mI (44320) example:take_picture: MJPG: 15KB 46ms (21.7fps)[0m
+[0;32mI (44355) example:take_picture: MJPG: 16KB 34ms (29.4fps)[0m
+[0;32mI (44402) example:take_picture: MJPG: 15KB 46ms (21.7fps)[0m
+[0;32mI (44440) example:take_picture: MJPG: 14KB 38ms (26.3fps)[0m
+[0;32mI (44477) example:take_picture: MJPG: 14KB 36ms (27.8fps)[0m
+[0;32mI (44514) example:take_picture: MJPG: 14KB 37ms (27.0fps)[0m
+[0;32mI (44553) example:take_picture: MJPG: 14KB 39ms (25.6fps)[0m
+[0;32mI (44593) example:take_picture: MJPG: 14KB 39ms (25.6fps)[0m
+[0;32mI (44642) example:take_picture: MJPG: 14KB 48ms (20.8fps)[0m
+[0;32mI (44679) example:take_picture: MJPG: 14KB 37ms (27.0fps)[0m
+[0;32mI (44718) example:take_picture: MJPG: 14KB 38ms (26.3fps)[0m
+[0;32mI (44754) example:take_picture: MJPG: 14KB 36ms (27.8fps)[0m
+[0;32mI (44795) example:take_picture: MJPG: 14KB 40ms (25.0fps)[0m
+[0;32mI (44832) example:take_picture: MJPG: 15KB 37ms (27.0fps)[0m
+[0;32mI (44872) example:take_picture: MJPG: 14KB 39ms (25.6fps)[0m
+[0;32mI (44912) example:take_picture: MJPG: 13KB 40ms (25.0fps)[0m
+[0;32mI (44953) example:take_picture: MJPG: 13KB 40ms (25.0fps)[0m
+[0;32mI (45012) example:take_picture: MJPG: 13KB 59ms (16.9fps)[0m
+[0;32mI (45038) example:take_picture: MJPG: 15KB 25ms (40.0fps)[0m
+[0;32mI (45084) example:take_picture: MJPG: 15KB 45ms (22.2fps)[0m
+[0;32mI (45121) example:take_picture: MJPG: 16KB 37ms (27.0fps)[0m
+[0;32mI (45158) example:take_picture: MJPG: 16KB 37ms (27.0fps)[0m
+[0;32mI (45203) example:take_picture: MJPG: 15KB 44ms (22.7fps)[0m
+[0;32mI (45234) example:take_picture: MJPG: 15KB 31ms (32.3fps)[0m
+[0;32mI (45277) example:take_picture: MJPG: 15KB 43ms (23.3fps)[0m
+[0;32mI (45313) example:take_picture: MJPG: 15KB 35ms (28.6fps)[0m
+[0;32mI (45354) example:take_picture: MJPG: 15KB 40ms (25.0fps)[0m
+[0;32mI (45398) example:take_picture: MJPG: 14KB 44ms (22.7fps)[0m
+[0;32mI (45435) example:take_picture: MJPG: 13KB 37ms (27.0fps)[0m
+[0;32mI (45473) example:take_picture: MJPG: 14KB 38ms (26.3fps)[0m
+[0;32mI (45522) example:take_picture: MJPG: 14KB 48ms (20.8fps)[0m
+[0;32mI (45552) example:take_picture: MJPG: 15KB 29ms (34.5fps)[0m
+[0;32mI (45599) example:take_picture: MJPG: 14KB 46ms (21.7fps)[0m
+[0;32mI (45633) example:take_picture: MJPG: 14KB 34ms (29.4fps)[0m
+[0;32mI (45673) example:take_picture: MJPG: 15KB 39ms (25.6fps)[0m
+[0;32mI (45721) example:take_picture: MJPG: 14KB 47ms (21.3fps)[0m
+[0;32mI (45754) example:take_picture: MJPG: 13KB 33ms (30.3fps)[0m
+[0;32mI (45792) example:take_picture: MJPG: 13KB 38ms (26.3fps)[0m
+[0;32mI (45836) example:take_picture: MJPG: 13KB 43ms (23.3fps)[0m
+[0;32mI (45875) example:take_picture: MJPG: 13KB 38ms (26.3fps)[0m
+[0;32mI (45920) example:take_picture: MJPG: 14KB 45ms (22.2fps)[0m
+[0;32mI (45955) example:take_picture: MJPG: 14KB 34ms (29.4fps)[0m
+[0;32mI (45998) example:take_picture: MJPG: 14KB 43ms (23.3fps)[0m
+[0;32mI (46033) example:take_picture: MJPG: 14KB 34ms (29.4fps)[0m
+[0;32mI (46074) example:take_picture: MJPG: 14KB 40ms (25.0fps)[0m
+[0;32mI (46113) example:take_picture: MJPG: 13KB 39ms (25.6fps)[0m
+[0;32mI (46152) example:take_picture: MJPG: 13KB 38ms (26.3fps)[0m
+[0;32mI (46191) example:take_picture: MJPG: 13KB 39ms (25.6fps)[0m
+[0;32mI (46237) example:take_picture: MJPG: 14KB 45ms (22.2fps)[0m
+[0;32mI (46271) example:take_picture: MJPG: 13KB 33ms (30.3fps)[0m
+[0;32mI (46315) example:take_picture: MJPG: 13KB 43ms (23.3fps)[0m
+[0;32mI (46350) example:take_picture: MJPG: 13KB 35ms (28.6fps)[0m
+[0;32mI (46394) example:take_picture: MJPG: 13KB 43ms (23.3fps)[0m
+[0;32mI (46434) example:take_picture: MJPG: 15KB 39ms (25.6fps)[0m
+[0;32mI (46475) example:take_picture: MJPG: 16KB 40ms (25.0fps)[0m
+[0;32mI (46517) example:take_picture: MJPG: 16KB 42ms (23.8fps)[0m
+[0;32mI (46561) example:take_picture: MJPG: 14KB 43ms (23.3fps)[0m
+[0;32mI (46592) example:take_picture: MJPG: 15KB 31ms (32.3fps)[0m
+[0;32mI (46634) example:take_picture: MJPG: 15KB 41ms (24.4fps)[0m
+[0;32mI (46673) example:take_picture: MJPG: 15KB 38ms (26.3fps)[0m
+[0;32mI (46716) example:take_picture: MJPG: 14KB 43ms (23.3fps)[0m
+[0;32mI (46763) example:take_picture: MJPG: 14KB 46ms (21.7fps)[0m
+[0;32mI (46794) example:take_picture: MJPG: 14KB 31ms (32.3fps)[0m
+[0;32mI (46833) example:take_picture: MJPG: 14KB 38ms (26.3fps)[0m
+[0;32mI (46871) example:take_picture: MJPG: 15KB 38ms (26.3fps)[0m
+[0;32mI (46913) example:take_picture: MJPG: 15KB 41ms (24.4fps)[0m
+[0;32mI (46951) example:take_picture: MJPG: 13KB 38ms (26.3fps)[0m
+[0;32mI (46998) example:take_picture: MJPG: 12KB 46ms (21.7fps)[0m
+[0;32mI (47039) example:take_picture: MJPG: 11KB 41ms (24.4fps)[0m
+[0;32mI (47072) example:take_picture: MJPG: 11KB 32ms (31.2fps)[0m
+[0;32mI (47117) example:take_picture: MJPG: 12KB 45ms (22.2fps)[0m
+[0;32mI (47151) example:take_picture: MJPG: 12KB 33ms (30.3fps)[0m
+[0;32mI (47191) example:take_picture: MJPG: 12KB 40ms (25.0fps)[0m
+[0;32mI (47231) example:take_picture: MJPG: 12KB 39ms (25.6fps)[0m
+[0;32mI (47277) example:take_picture: MJPG: 12KB 46ms (21.7fps)[0m
+[0;32mI (47311) example:take_picture: MJPG: 11KB 33ms (30.3fps)[0m
+[0;32mI (47353) example:take_picture: MJPG: 12KB 41ms (24.4fps)[0m
+[0;32mI (47391) example:take_picture: MJPG: 11KB 38ms (26.3fps)[0m
+[0;32mI (47430) example:take_picture: MJPG: 12KB 38ms (26.3fps)[0m
+[0;32mI (47470) example:take_picture: MJPG: 11KB 40ms (25.0fps)[0m
+[0;32mI (47510) example:take_picture: MJPG: 11KB 39ms (25.6fps)[0m
+[0;32mI (47550) example:take_picture: MJPG: 11KB 40ms (25.0fps)[0m
+[0;32mI (47597) example:take_picture: MJPG: 11KB 46ms (21.7fps)[0m
+[0;32mI (47632) example:take_picture: MJPG: 12KB 35ms (28.6fps)[0m
+[0;32mI (47675) example:take_picture: MJPG: 14KB 42ms (23.8fps)[0m
+[0;32mI (47717) example:take_picture: MJPG: 14KB 41ms (24.4fps)[0m
+[0;32mI (47754) example:take_picture: MJPG: 14KB 36ms (27.8fps)[0m
+[0;32mI (47792) example:take_picture: MJPG: 14KB 38ms (26.3fps)[0m
+[0;32mI (47832) example:take_picture: MJPG: 13KB 40ms (25.0fps)[0m
+[0;32mI (47876) example:take_picture: MJPG: 14KB 43ms (23.3fps)[0m
+[0;32mI (47912) example:take_picture: MJPG: 14KB 36ms (27.8fps)[0m
+[0;32mI (47954) example:take_picture: MJPG: 16KB 41ms (24.4fps)[0m
+[0;32mI (47994) example:take_picture: MJPG: 18KB 39ms (25.6fps)[0m
+[0;32mI (48037) example:take_picture: MJPG: 17KB 42ms (23.8fps)[0m
+[0;32mI (48073) example:take_picture: MJPG: 17KB 36ms (27.8fps)[0m
+[0;32mI (48114) example:take_picture: MJPG: 17KB 40ms (25.0fps)[0m
+[0;32mI (48159) example:take_picture: MJPG: 18KB 44ms (22.7fps)[0m
+[0;32mI (48195) example:take_picture: MJPG: 18KB 36ms (27.8fps)[0m
+[0;32mI (48235) example:take_picture: MJPG: 17KB 39ms (25.6fps)[0m
+[0;32mI (48273) example:take_picture: MJPG: 18KB 38ms (26.3fps)[0m
+[0;32mI (48316) example:take_picture: MJPG: 19KB 42ms (23.8fps)[0m
+[0;32mI (48355) example:take_picture: MJPG: 17KB 39ms (25.6fps)[0m
+[0;32mI (48400) example:take_picture: MJPG: 18KB 44ms (22.7fps)[0m
+[0;32mI (48439) example:take_picture: MJPG: 18KB 39ms (25.6fps)[0m
+[0;32mI (48473) example:take_picture: MJPG: 19KB 33ms (30.3fps)[0m
+[0;32mI (48513) example:take_picture: MJPG: 17KB 39ms (25.6fps)[0m
+[0;32mI (48555) example:take_picture: MJPG: 19KB 42ms (23.8fps)[0m
+[0;32mI (48601) example:take_picture: MJPG: 19KB 45ms (22.2fps)[0m
+[0;32mI (48641) example:take_picture: MJPG: 19KB 39ms (25.6fps)[0m
+[0;32mI (48696) example:take_picture: MJPG: 20KB 55ms (18.2fps)[0m
+[0;32mI (48715) example:take_picture: MJPG: 20KB 18ms (55.6fps)[0m
+[0;32mI (48759) example:take_picture: MJPG: 19KB 44ms (22.7fps)[0m
+[0;32mI (48805) example:take_picture: MJPG: 20KB 46ms (21.7fps)[0m
+[0;32mI (48834) example:take_picture: MJPG: 20KB 29ms (34.5fps)[0m
+[0;32mI (48879) example:take_picture: MJPG: 20KB 44ms (22.7fps)[0m
+[0;32mI (48921) example:take_picture: MJPG: 20KB 42ms (23.8fps)[0m
+[0;32mI (48962) example:take_picture: MJPG: 19KB 40ms (25.0fps)[0m
+[0;32mI (48996) example:take_picture: MJPG: 19KB 34ms (29.4fps)[0m
+[0;32mI (49042) example:take_picture: MJPG: 19KB 46ms (21.7fps)[0m
+[0;32mI (49081) example:take_picture: MJPG: 21KB 38ms (26.3fps)[0m
+[0;32mI (49119) example:take_picture: MJPG: 20KB 38ms (26.3fps)[0m
+[0;32mI (49155) example:take_picture: MJPG: 18KB 35ms (28.6fps)[0m
+[0;32mI (49195) example:take_picture: MJPG: 17KB 40ms (25.0fps)[0m
+[0;32mI (49233) example:take_picture: MJPG: 16KB 38ms (26.3fps)[0m
+[0;32mI (49273) example:take_picture: MJPG: 15KB 40ms (25.0fps)[0m
+[0;32mI (49315) example:take_picture: MJPG: 16KB 41ms (24.4fps)[0m
+[0;32mI (49354) example:take_picture: MJPG: 15KB 38ms (26.3fps)[0m
+[0;32mI (49398) example:take_picture: MJPG: 15KB 43ms (23.3fps)[0m
+[0;32mI (49433) example:take_picture: MJPG: 15KB 34ms (29.4fps)[0m
+[0;32mI (49476) example:take_picture: MJPG: 15KB 43ms (23.3fps)[0m
+[0;32mI (49513) example:take_picture: MJPG: 14KB 36ms (27.8fps)[0m
+[0;32mI (49550) example:take_picture: MJPG: 14KB 37ms (27.0fps)[0m
+[0;32mI (49596) example:take_picture: MJPG: 13KB 45ms (22.2fps)[0m
+[0;32mI (49631) example:take_picture: MJPG: 13KB 35ms (28.6fps)[0m
+[0;32mI (49671) example:take_picture: MJPG: 13KB 40ms (25.0fps)[0m
+[0;32mI (49713) example:take_picture: MJPG: 14KB 41ms (24.4fps)[0m
+[0;32mI (49751) example:take_picture: MJPG: 14KB 38ms (26.3fps)[0m
+[0;32mI (49796) example:take_picture: MJPG: 14KB 44ms (22.7fps)[0m
+[0;32mI (49838) example:take_picture: MJPG: 14KB 41ms (24.4fps)[0m
+[0;32mI (49875) example:take_picture: MJPG: 15KB 37ms (27.0fps)[0m
+[0;32mI (49914) example:take_picture: MJPG: 14KB 38ms (26.3fps)[0m
+[0;32mI (49952) example:take_picture: MJPG: 14KB 37ms (27.0fps)[0m
+[0;32mI (49990) example:take_picture: MJPG: 13KB 38ms (26.3fps)[0m
+[0;32mI (50035) example:take_picture: MJPG: 14KB 44ms (22.7fps)[0m
+[0;32mI (50071) example:take_picture: MJPG: 14KB 36ms (27.8fps)[0m
+[0;32mI (50115) example:take_picture: MJPG: 14KB 43ms (23.3fps)[0m
+[0;32mI (50149) example:take_picture: MJPG: 13KB 34ms (29.4fps)[0m
+[0;32mI (50193) example:take_picture: MJPG: 14KB 43ms (23.3fps)[0m
+[0;32mI (50230) example:take_picture: MJPG: 14KB 37ms (27.0fps)[0m
+[0;32mI (50274) example:take_picture: MJPG: 14KB 43ms (23.3fps)[0m
+[0;32mI (50318) example:take_picture: MJPG: 14KB 43ms (23.3fps)[0m
+[0;32mI (50351) example:take_picture: MJPG: 14KB 33ms (30.3fps)[0m
+[0;32mI (50390) example:take_picture: MJPG: 14KB 39ms (25.6fps)[0m
+[0;32mI (50435) example:take_picture: MJPG: 14KB 45ms (22.2fps)[0m
+[0;32mI (50471) example:take_picture: MJPG: 14KB 36ms (27.8fps)[0m
+[0;32mI (50514) example:take_picture: MJPG: 14KB 42ms (23.8fps)[0m
+[0;32mI (50551) example:take_picture: MJPG: 14KB 36ms (27.8fps)[0m
+[0;32mI (50590) example:take_picture: MJPG: 14KB 39ms (25.6fps)[0m
+[0;32mI (50634) example:take_picture: MJPG: 14KB 43ms (23.3fps)[0m
+[0;32mI (50673) example:take_picture: MJPG: 14KB 39ms (25.6fps)[0m
+[0;32mI (50715) example:take_picture: MJPG: 14KB 41ms (24.4fps)[0m
+[0;32mI (50750) example:take_picture: MJPG: 14KB 35ms (28.6fps)[0m
+[0;32mI (50792) example:take_picture: MJPG: 15KB 41ms (24.4fps)[0m
+[0;32mI (50834) example:take_picture: MJPG: 15KB 42ms (23.8fps)[0m
+[0;32mI (50878) example:take_picture: MJPG: 14KB 43ms (23.3fps)[0m
+[0;32mI (50916) example:take_picture: MJPG: 14KB 38ms (26.3fps)[0m
+[0;32mI (50956) example:take_picture: MJPG: 15KB 39ms (25.6fps)[0m
+[0;32mI (50993) example:take_picture: MJPG: 14KB 37ms (27.0fps)[0m
+[0;32mI (51035) example:take_picture: MJPG: 15KB 42ms (23.8fps)[0m
+[0;32mI (51073) example:take_picture: MJPG: 15KB 37ms (27.0fps)[0m
+[0;32mI (51126) example:take_picture: MJPG: 15KB 53ms (18.9fps)[0m
+[0;32mI (51155) example:take_picture: MJPG: 15KB 29ms (34.5fps)[0m
+[0;32mI (51196) example:take_picture: MJPG: 15KB 40ms (25.0fps)[0m
+[0;32mI (51240) example:take_picture: MJPG: 15KB 43ms (23.3fps)[0m
+[0;32mI (51271) example:take_picture: MJPG: 15KB 31ms (32.3fps)[0m
+[0;32mI (51317) example:take_picture: MJPG: 15KB 46ms (21.7fps)[0m
+[0;32mI (51349) example:take_picture: MJPG: 15KB 32ms (31.2fps)[0m
+[0;32mI (51394) example:take_picture: MJPG: 15KB 44ms (22.7fps)[0m
+[0;32mI (51431) example:take_picture: MJPG: 15KB 36ms (27.8fps)[0m
+[0;32mI (51472) example:take_picture: MJPG: 15KB 40ms (25.0fps)[0m
+[0;32mI (51510) example:take_picture: MJPG: 15KB 38ms (26.3fps)[0m
+[0;32mI (51557) example:take_picture: MJPG: 15KB 46ms (21.7fps)[0m
+[0;32mI (51589) example:take_picture: MJPG: 15KB 32ms (31.2fps)[0m
+[0;32mI (51640) example:take_picture: MJPG: 15KB 50ms (20.0fps)[0m
+[0;32mI (51671) example:take_picture: MJPG: 15KB 31ms (32.3fps)[0m
+[0;32mI (51714) example:take_picture: MJPG: 15KB 42ms (23.8fps)[0m
+[0;32mI (51752) example:take_picture: MJPG: 15KB 38ms (26.3fps)[0m
+[0;32mI (51791) example:take_picture: MJPG: 15KB 38ms (26.3fps)[0m
+[0;32mI (51840) example:take_picture: MJPG: 15KB 48ms (20.8fps)[0m
+[0;32mI (51873) example:take_picture: MJPG: 15KB 32ms (31.2fps)[0m
+[0;32mI (51913) example:take_picture: MJPG: 15KB 40ms (25.0fps)[0m
+[0;32mI (51952) example:take_picture: MJPG: 15KB 39ms (25.6fps)[0m
+[0;32mI (51994) example:take_picture: MJPG: 15KB 41ms (24.4fps)[0m
+[0;32mI (52035) example:take_picture: MJPG: 15KB 41ms (24.4fps)[0m
+[0;32mI (52074) example:take_picture: MJPG: 14KB 38ms (26.3fps)[0m
+[0;32mI (52118) example:take_picture: MJPG: 14KB 43ms (23.3fps)[0m
+[0;32mI (52153) example:take_picture: MJPG: 15KB 35ms (28.6fps)[0m
+[0;32mI (52198) example:take_picture: MJPG: 14KB 44ms (22.7fps)[0m
+[0;32mI (52238) example:take_picture: MJPG: 14KB 40ms (25.0fps)[0m
+[0;32mI (52274) example:take_picture: MJPG: 15KB 36ms (27.8fps)[0m
+[0;32mI (52310) example:take_picture: MJPG: 15KB 35ms (28.6fps)[0m
+[0;32mI (52352) example:take_picture: MJPG: 15KB 41ms (24.4fps)[0m
+[0;32mI (52401) example:take_picture: MJPG: 15KB 48ms (20.8fps)[0m
+[0;32mI (52432) example:take_picture: MJPG: 15KB 30ms (33.3fps)[0m
+[0;32mI (52473) example:take_picture: MJPG: 15KB 41ms (24.4fps)[0m
+[0;32mI (52512) example:take_picture: MJPG: 14KB 38ms (26.3fps)[0m
+[0;32mI (52550) example:take_picture: MJPG: 15KB 38ms (26.3fps)[0m
+[0;32mI (52597) example:take_picture: MJPG: 15KB 47ms (21.3fps)[0m
+[0;32mI (52633) example:take_picture: MJPG: 15KB 36ms (27.8fps)[0m
+[0;32mI (52674) example:take_picture: MJPG: 15KB 40ms (25.0fps)[0m
+[0;32mI (52714) example:take_picture: MJPG: 15KB 39ms (25.6fps)[0m
+[0;32mI (52752) example:take_picture: MJPG: 15KB 37ms (27.0fps)[0m
+[0;32mI (52791) example:take_picture: MJPG: 15KB 38ms (26.3fps)[0m
+[0;32mI (52832) example:take_picture: MJPG: 15KB 41ms (24.4fps)[0m
+[0;32mI (52872) example:take_picture: MJPG: 15KB 40ms (25.0fps)[0m
+[0;32mI (52909) example:take_picture: MJPG: 15KB 36ms (27.8fps)[0m
+[0;32mI (52949) example:take_picture: MJPG: 15KB 40ms (25.0fps)[0m
+[0;32mI (52990) example:take_picture: MJPG: 15KB 40ms (25.0fps)[0m
+[0;32mI (53036) example:take_picture: MJPG: 15KB 46ms (21.7fps)[0m
+[0;32mI (53074) example:take_picture: MJPG: 15KB 38ms (26.3fps)[0m
+[0;32mI (53108) example:take_picture: MJPG: 15KB 34ms (29.4fps)[0m
+[0;32mI (53150) example:take_picture: MJPG: 15KB 42ms (23.8fps)[0m
+[0;32mI (53191) example:take_picture: MJPG: 15KB 40ms (25.0fps)[0m
+[0;32mI (53230) example:take_picture: MJPG: 15KB 38ms (26.3fps)[0m
+[0;32mI (53273) example:take_picture: MJPG: 15KB 43ms (23.3fps)[0m
+[0;32mI (53309) example:take_picture: MJPG: 15KB 36ms (27.8fps)[0m
+[0;32mI (53350) example:take_picture: MJPG: 15KB 41ms (24.4fps)[0m
+[0;32mI (53392) example:take_picture: MJPG: 15KB 41ms (24.4fps)[0m
+[0;32mI (53435) example:take_picture: MJPG: 15KB 42ms (23.8fps)[0m

@@ -1,0 +1,61 @@
+[0;33m--- idf_monitor on /dev/ttyUSB0 115200 ---[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H ---[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400814d0: call_start_cpu1 at /home/edev/esp/esp-idf/components/esp_system/port/cpu_start.c:178
+[0m
+[0;33m0x40092516: remove_free_block at /home/edev/esp/esp-idf/components/heap/tlsf/tlsf.c:332
+ (inlined by) block_locate_free at /home/edev/esp/esp-idf/components/heap/tlsf/tlsf.c:567
+ (inlined by) tlsf_malloc at /home/edev/esp/esp-idf/components/heap/tlsf/tlsf.c:1004
+[0m
+[0;33m0x4008a2d8: memcpy at /builds/idf/crosstool-NG/.build/xtensa-esp32-elf/src/newlib/newlib/libc/machine/xtensa/memcpy.S:175
+[0m
+[0;33m0x4008a2f4: memcpy at /builds/idf/crosstool-NG/.build/xtensa-esp32-elf/src/newlib/newlib/libc/machine/xtensa/memcpy.S:197
+[0m
+[0;33m0x40092513: remove_free_block at /home/edev/esp/esp-idf/components/heap/tlsf/tlsf.c:331
+ (inlined by) block_locate_free at /home/edev/esp/esp-idf/components/heap/tlsf/tlsf.c:567
+ (inlined by) tlsf_malloc at /home/edev/esp/esp-idf/components/heap/tlsf/tlsf.c:1004
+[0m
+[0;33m0x40091f73: multi_heap_malloc_impl at /home/edev/esp/esp-idf/components/heap/multi_heap.c:207
+[0m
+[0;33m0x4008252b: heap_caps_malloc_base at /home/edev/esp/esp-idf/components/heap/heap_caps.c:176
+[0m
+[0;33m0x40082599: heap_caps_malloc_default at /home/edev/esp/esp-idf/components/heap/heap_caps.c:231
+[0m
+[0;33m0x400947c9: malloc at /home/edev/esp/esp-idf/components/newlib/heap.c:24
+[0m
+[0;33m0x40086949: wifi_malloc at /home/edev/esp/esp-idf/components/esp_wifi/esp32/esp_adapter.c:74
+[0m
+[0;33m0x40163ea9: esf_buf_alloc_dynamic at ??:?
+[0m
+[0;33m0x4009762d: esf_buf_alloc at ??:?
+[0m
+[0;33m0x40097387: wDev_IndicateAmpdu at ??:?
+[0m
+[0;33m0x40098977: wDev_ProcessRxSucData at ??:?
+[0m
+[0;33m0x40098a43: wdevProcessRxSucDataAll at ??:?
+[0m
+[0;33m0x4009610a: ppTask at ??:?
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400814d0: call_start_cpu1 at /home/edev/esp/esp-idf/components/esp_system/port/cpu_start.c:178
+[0m
+[0;33m0x40081d55: panic_abort at /home/edev/esp/esp-idf/components/esp_system/panic.c:452
+[0m
+[0;33m0x4008d431: esp_system_abort at /home/edev/esp/esp-idf/components/esp_system/port/esp_system_chip.c:93
+[0m
+[0;33m0x40090079: vApplicationStackOverflowHook at /home/edev/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:581
+[0m
+[0;33m0x4008eb5d: vTaskSwitchContext at /home/edev/esp/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c:3441
+[0m
+[0;33m0x400901e4: _frxt_dispatch at /home/edev/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/portasm.S:450
+[0m
+[0;33m0x40090196: _frxt_int_exit at /home/edev/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/portasm.S:245
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400814d0: call_start_cpu1 at /home/edev/esp/esp-idf/components/esp_system/port/cpu_start.c:178
+[0m
+[0m

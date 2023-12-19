@@ -1,0 +1,15 @@
+[1/9] Performing build step for 'bootloader'
+[1/1] cd /home/edev/Documents/Repositories/Subjects/esp32/camera_test/build/bootloader/esp-idf/esptool_py && /home/edev/.espressif/python_env/idf5.2_py3.10_env/bin/python /home/edev/esp/esp-idf/components/partition_table/check_sizes.py --offset 0x10000 bootloader 0x1000 /home/edev/Documents/Repositories/Subjects/esp32/camera_test/build/bootloader/bootloader.bin
+Bootloader binary size 0x6ff0 bytes. 0x8010 bytes (53%) free.
+[2/7] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/take_picture.c.obj
+[3/7] Linking C static library esp-idf/main/libmain.a
+[4/7] Generating ld/sections.ld
+[5/7] Linking CXX executable camera_example.elf
+[6/7] Generating binary image from built executable
+esptool.py v4.7.dev1
+Creating esp32 image...
+Merged 26 ELF sections
+Successfully created esp32 image.
+Generated /home/edev/Documents/Repositories/Subjects/esp32/camera_test/build/camera_example.bin
+[7/7] cd /home/edev/Documents/Repositories/Subjects/esp32/camera_test/build/esp-idf/esptool_py && /home/edev/.espressif/python_env/idf5.2_py3.10_env/bin/python /home/edev/esp/esp-idf/components/partition_table/check_sizes.py --offset 0x10000 partition --type app /home/edev/Documents/Repositories/Subjects/esp32/camera_test/build/partition_table/partition-table.bin /home/edev/Documents/Repositories/Subjects/esp32/camera_test/build/camera_example.bin
+camera_example.bin binary size 0xe10f0 bytes. Smallest app partition is 0x100000 bytes. 0x1ef10 bytes (12%) free.
