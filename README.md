@@ -50,8 +50,8 @@ Todo sistema pode ser simplificado ao programa main. Onde temos o início da lei
 
 O software em nuvem é baseado em duas bibliotecas principais:
 
-* Opencv
-* face_recognition
+* [Opencv](https://opencv.org/)
+* [face_recognition](https://pypi.org/project/face-recognition/)
 
 Ainda foram aplicadas bibliotecas de csv, datetime e numpy.
 
@@ -93,13 +93,58 @@ def equalize_color(img):
     return cv2.cvtColor(frame_yuv, cv2.COLOR_YUV2BGR)
 ~~~
 
-![Imagem sem equalização]('/Archives/Images/notequal.jpg' "Not Equal")
+![Imagem sem equalização](/Archives/Images/notequal.jpg "Not Equal") ![Imagem com equalização](/Archives/Images/equal.png "Equal")
 
+É possível ver pelas imagens acima que a imagem que não possui equalização é mais fácil de ser observada por olhos humanos, porém, a imagem equalizada apresenta ambientes mais uniformes para uma leitura de máquina que será o foco deste sistema.
 
 #### Processamento das Imagens
 
-A
+Uma vez que se tenha as imagens pré-processadas basta que nos utilizemos dos métodos presentes na biblioteca face_recognition. Com a utilização de apenas uma imagem podemos reconhecer uma face com uma taxa de acerto superior a 90%. 
 
+~~~ python
+    (...)
+    face_locations = face_recognition.face_locations(frame_output,1,"hog")
+    face_encodings = face_recognition.face_encodings(frame_output, face_locations,model='small')
+    
+    for (top, right, bottom, left), face_encoding in zip(face_locations, face_encodings):
+
+        matches = face_recognition.compare_faces(User_encod, face_encoding)
+
+        name = "Unknown"
+        
+        face_distances = face_recognition.face_distance(User_encod, face_encoding)
+        best_match_index = np.argmin(face_distances)
+    (...)
+~~~
+
+Os métodos aplicados foram:
+
+* face_locations: Procura na imagem a posição de rostos humanos, para isso se utiliza de histogram of oriented gradients, HOG, também existe a opção de usar uma convolutional neural network, cnn, porém a resposta em processador de uma HOG é extremamente superior.
+
+* face_encoding: Cada face encontrada será, então, transformada em um código 128 dimensional.
+
+* compare_faces: Onde se compara dada face com as faces conhecidas pelo sistema.
+
+* face_distance: o que retorna um vetor 128 dimensional que dá a distância de cada ponto nessa dimensão, e assim é possível se tirar o mínimo para definir qual face mais se precisa aquela encontrada.
+
+Assim é possível descobrir com altíssima precisão o rosto de uma grande quantidade de usuários.
+
+### Utilização do Sistema
+
+O sistema pode ser utilizado de forma bem simples. A pasta, Usuários, deve conter uma imagem frontal com o nome do indivíduo que deverá ser reconhecido. Como demonstrado na figura abaixo.
+
+!["Imagem dos Usuários"](/Archives/Images/Users.png "Users")
+
+Uma vez que o usuário seja reconhecido ele adicionou ao log a entrada com o dia da semana e hora do reconhecimento. Para evitar flood de informação é possível definir um limite de tempo para o reconhecimento. A figura abaixo demonstra a saída esperada.
+
+!["Saída do Reconhecimento"](/Archives/Images/Saída.png "Saida")
+
+## Wishlist
+
+- [ ] Integração com Bancos de Dados.
+- [ ] Aplicação de uma User Interface no Sistema Embarcado.
+- [ ] Testes de Funcionamento Não Idealizados.
+- [ ] Desenvolvimento de métodos de segurança anti fraude.
 
 ## Contribuitors
 
