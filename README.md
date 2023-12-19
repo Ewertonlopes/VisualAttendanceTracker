@@ -1,9 +1,10 @@
-# Low Cost Visual Attendance Tracker
+# ESP CAM Visual Attendance Tracker
 
-Este é o repositorio do desenvolvimento de um sistema de baixo custo para 
+Este é o repositório do desenvolvimento de um sistema de presença automático. Este sistema pretende ser barato, de simples utilização e capaz de funcionar em rede.
 
 ## Hardware
 
+Para o desenvolvimento do sistema
 
 ## Software
 
