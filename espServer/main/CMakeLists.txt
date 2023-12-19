@@ -1,6 +1,6 @@
 idf_component_register(
         SRCS
-            take_picture.c
+            webcamera.c
             
         INCLUDE_DIRS
             .

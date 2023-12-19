@@ -1,1 +1,0 @@
-ninja: error: '../main/opencv/libopencv_imgcodecs.a', needed by 'camera_example.elf', missing and no known rule to make it
