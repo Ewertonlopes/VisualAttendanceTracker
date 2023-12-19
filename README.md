@@ -4,11 +4,14 @@ Este é o repositório do desenvolvimento de um sistema de presença automático
 
 ## Hardware
 
-Para o desenvolvimento do sistema
+Para o desenvolvimento de 
+
+![Microcontrolador Esp32 com camera](https://d229kd5ey79jzj.cloudfront.net/1205/images/1205_1_H.png?20230725094432 "Esp cam")
 
 ## Software
 
-##
+### Estrutura
+
 
 ## Contribuitors
 
