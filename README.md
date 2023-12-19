@@ -13,9 +13,11 @@ Este repositório se divide em duas partes principais:
 
 ## Hardware
 
-Qualquer hardware com capacidades 
+Qualquer hardware com sensores de imagem e capacidade de conexão podem ser utilizados como ponto final do sistema. Abaixo está posto o devkit utilizado para os testes de resposta. Um sistema parecido pode ser encontrado no link a seguir: <https://www.robocore.net/wifi/esp32-cam-esp32-com-camera>
 
 ![Microcontrolador Esp32 com camera](https://d229kd5ey79jzj.cloudfront.net/1205/images/1205_1_H.png?20230725094432 "Esp cam")
+
+
 
 ## Software
 
