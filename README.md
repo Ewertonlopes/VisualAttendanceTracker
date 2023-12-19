@@ -28,7 +28,7 @@ O desenvolvimento do software pode ser dividido em duas partes essenciais:
 Para o desenvolvimento do sistema embarcado se utilizou a framework da espressif,[Espressif IDF](https://github.com/espressif/esp-idf). Dentro dessa framework se utilizou a [biblioteca adequada](https://github.com/espressif/esp32-camera)  para captura de imagens com a câmera ov2640, uma câmera de baixo custo e consumo.
 
 
-~~~
+~~~ c
     esp_err_t ret = nvs_flash_init();
     if (ret == ESP_ERR_NVS_NO_FREE_PAGES || ret == ESP_ERR_NVS_NEW_VERSION_FOUND) {
       ESP_ERROR_CHECK(nvs_flash_erase());
@@ -48,11 +48,57 @@ Todo sistema pode ser simplificado ao programa main. Onde temos o início da lei
 
 ### Software em Nuvem
 
-O software em nuvem deve ser 
+O software em nuvem é baseado em duas bibliotecas principais:
+
+* Opencv
+* face_recognition
+
+Ainda foram aplicadas bibliotecas de csv, datetime e numpy.
+
+#### Captura de Imagens
+
+O procedimento de captura de imagem pode ser simplificada pelas linhas de código a seguir:
+
+~~~ python
+stream_url = "http://192.168.4.1:80"  
+
+cap = cv2.VideoCapture(stream_url)
+
+if not cap.isOpened():
+    print("Error: Could not open video stream")
+    exit()
+
+(...)
+
+while True:
+    ret, frame = cap.read()
+
+    if not ret:
+        print("Error reading frame from the video stream")
+        break
+~~~
+
+Assim uma estrutura de câmera será captura do webserver, foi possível conseguir taxas superiores a 30 fps com imagem comprimida como jpg dessa forma.
 
 #### Pré-Processamento de Imagens
 
+Pela estrutura do sistema e não necessidade de visualização das imagens se resolveu se utilizar de técnicas de equalização, para isso é necessário operar em YUV ao invés de BGR.
 
+~~~ python
+def equalize_color(img):
+    frame_yuv = cv2.cvtColor(img, cv2.COLOR_BGR2YUV)
+
+    frame_yuv[:,:,0] = cv2.equalizeHist(frame_yuv[:,:,0])
+
+    return cv2.cvtColor(frame_yuv, cv2.COLOR_YUV2BGR)
+~~~
+
+![Imagem sem equalização]('/Archives/Images/notequal.jpg' "Not Equal")
+
+
+#### Processamento das Imagens
+
+A
 
 
 ## Contribuitors

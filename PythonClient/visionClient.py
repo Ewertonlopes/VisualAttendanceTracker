@@ -68,9 +68,6 @@ for User in Users:
 for i in range(len(Users)):
     Found_faces.append(False)    
  
-
-
-
 counter = 1
 while True:
     ret, frame = cap.read()
